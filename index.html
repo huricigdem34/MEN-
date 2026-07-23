@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Lobby QR Menü</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/intro.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<section id="intro">
+  <div class="overlay"></div>
+  <img src="assets/images/Background.png" class="background" alt="">
+  <div class="fog fog1"></div><div class="fog fog2"></div>
+
+  <div class="bulbs">
+    <div class="rope-hanger b1-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b1" alt=""></div>
+    <div class="rope-hanger b2-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b2" alt=""></div>
+    <div class="rope-hanger b3-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b3" alt=""></div>
+    <div class="rope-hanger b4-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b4" alt=""></div>
+    <div class="rope-hanger b5-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b5" alt=""></div>
+    <div class="rope-hanger b6-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b6" alt=""></div>
+    <div class="rope-hanger b7-hanger"><span class="decor-rope"></span><img src="assets/images/edison-bulb.png" class="edison b7" alt=""></div>
+  </div>
+
+  <div class="center">
+    <p class="touch">MENÜYE GİRMEK İÇİN<br>DOKUNUN</p>
+  </div>
+</section>
+
+<section id="welcome">
+  <div class="welcomeBox">
+    <h1><span>Lezzetli Bir Deneyime</span><br><strong>Hazır Mısınız?</strong></h1>
+
+  </div>
+</section>
+
+<section id="menu">
+  <div class="menu-container">
+    <header class="menu-header">
+      <button id="backBtn" class="back-btn" aria-label="Kategorilere dön">‹</button>
+      <div><small>THE LOBBY</small><h2 id="menuTitle">Menümüz</h2></div>
+      <span class="header-space"></span>
+    </header>
+    <div id="categoryGrid" class="category-grid"></div>
+    <div id="productGrid" class="product-grid hidden"></div>
+  </div>
+</section>
+
+<div id="detailModal" class="modal hidden">
+  <div class="modal-card">
+    <button id="closeModal" class="modal-close">×</button>
+    <img id="modalImage" alt="">
+    <div class="modal-body">
+      <small id="modalCategory"></small>
+      <h2 id="modalName"></h2>
+      <p id="modalDesc" class="modal-desc"></p>
+      <div class="detail-grid">
+        <div><span>Yaklaşık Kalori</span><b id="modalCal"></b></div>
+        <div><span>Gramaj</span><b id="modalGram"></b></div>
+      </div>
+      <section><h3>İçindekiler</h3><p id="modalIngredients"></p></section>
+      <section><h3>Alerjenler</h3><p id="modalAllergens"></p></section>
+      <div class="chef-note"><span>Şefin Tavsiyesi</span><p id="modalChef"></p></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/intro.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

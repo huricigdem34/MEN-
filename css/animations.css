@@ -1,0 +1,6 @@
+@keyframes touchGlow{0%,100%{opacity:.42;letter-spacing:3px}50%{opacity:1;letter-spacing:6px;text-shadow:0 0 12px rgba(255,220,120,.7),0 0 25px rgba(255,200,90,.5)}}.touch{animation:none;opacity:.72;text-shadow:0 0 8px rgba(255,220,120,.16)}
+.fog{animation:fogMove 18s linear infinite}.fog2{animation:fogMove2 25s linear infinite}
+@keyframes fogMove{0%,100%{transform:translateX(-8%)}50%{transform:translateX(8%)}}
+@keyframes fogMove2{0%{transform:translateX(10%)}50%{transform:translateX(-10%)}100%{transform:translateX(10%)}}
+@keyframes cinemaIn{to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes welcomeLight{to{opacity:1}}
