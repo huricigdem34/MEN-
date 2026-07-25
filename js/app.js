@@ -13,6 +13,8 @@ const categories=[
 const P=(cat,name,img,desc,cal,gram,ing,all="Bilinen temel alerjen yoktur.",chef="Reçeteye uygun şekilde taze hazırlanarak servis edilir.")=>({cat,name,img,desc,cal,gram,ing,all,chef});
 
 const PRICE_MAP = {
+  "Hellim Peyniri":320,
+  "Kavun":170,
   "Izgara Köfte":720,
   "Filet Steak":850,
   "Pepper Steak":850,
@@ -20,7 +22,7 @@ const PRICE_MAP = {
   "Kaşarlı Köfte":750,
   "Soya Soslu Tavuk":440,
   "Kuzu Pirzola":850,
-  "Köri Soslu Tavuk":420,
+  "Köri Soslu Tavuk":440,
   "Tavuk Şinitzel":440,
   "Izgara Tavuk":440,
   "Mexican Tavuk":500,
@@ -262,8 +264,8 @@ P("Makarnalar","Spaghetti alla Bolognese","spaghetti-alla-bolognese.jpg","Dana k
 P("Makarnalar","Penne Arrabbiata","penne-arrabbiata.jpg","Acı pul biberli domates sosunda penne.","540 kcal","300 g","Penne 100 g, domates püresi, domates salçası, sarımsak, zeytinyağı, acı pul biber, tuz, karabiber, şeker, maydanoz, isteğe bağlı parmesan.","Gluten; parmesan eklenirse süt ve süt ürünleri."),
 P("Makarnalar","Penne alla Carbonara","penne-alla-carbonara.jpg","Füme et, yumurta sarısı, parmesan ve kremalı penne.","820 kcal","330 g","Penne 100 g, dana veya hindi füme 50 g, yumurta sarısı 2 adet (40 g), parmesan 25 g, krema 50 ml, tereyağı 10 g, isteğe bağlı sarımsak 3 g, karabiber 2 g, tuz 2 g.","Gluten, yumurta, süt ve süt ürünleri."),
 
-P("Tavuklar","Soya Soslu Tavuk","soya-soslu-tavuk.jpg","Soya sosu ve sebzelerle sotelenmiş tavuk.","520 kcal","330 g","Tavuk göğsü 180 g, soya sosu, sebzeler, yağ ve reçetedeki baharatlar.","Soya; soya sosuna göre gluten içerebilir."),
-P("Tavuklar","Köri Soslu Tavuk","kori-soslu-tavuk.jpg","Kremalı köri sosunda tavuk ve mantar.","650 kcal","390 g","Tavuk 180 g, mantar 50 g, soğan 30 g, sarımsak 5 g, tereyağı 10 g, sıvı yağ 10 ml, krema 100 ml, köri 5 g, tuz 2 g, karabiber 1 g, isteğe bağlı un 5 g.","Süt ve süt ürünleri; un eklenirse gluten."),
+P("Tavuklar","Soya Soslu Tavuk","soya-soslu-tavuk.jpg","Soya sosu ve sebzelerle sotelenmiş tavuk.","520 kcal","330 g","Tavuk göğsü 180 g, soya sosu, mantar 50 g, yağ ve reçetedeki baharatlar.","Soya; soya sosuna göre gluten içerebilir."),
+P("Tavuklar","Köri Soslu Tavuk","kori-soslu-tavuk.jpg","Kremalı köri sosunda tavuk ve mantar.","650 kcal","390 g","Tavuk 180 g, biber 50 g, sarımsak 5 g, tereyağı 10 g, sıvı yağ 10 ml, krema 100 ml, köri 5 g, tuz 2 g, karabiber 1 g, isteğe bağlı un 5 g.","Süt ve süt ürünleri; un eklenirse gluten."),
 P("Tavuklar","Tavuk Şinitzel","tavuk-sinitzel.jpg","Çıtır pane tavuk, patates ve limon.","760 kcal","380 g (garnitür dahil)","Tavuk göğsü 180 g, un 30 g, yumurta 1 adet, galeta unu 60 g, tuz 2 g, karabiber 1 g, isteğe bağlı kırmızı biber, kızartma yağı; patates 120 g, limon, maydanoz.","Gluten, yumurta."),
 P("Tavuklar","Tavuk Fajita","tavuk-fajita.jpg","Renkli biberlerle yüksek ateşte sotelenmiş tavuk.","690 kcal","460 g (tortilla dahil)","Tavuk 180 g, kapya biber 40 g, yeşil biber 40 g, sarı biber 40 g, soğan 50 g, sıvı yağ 15 ml, tereyağı 10 g, sarımsak 5 g, tuz, karabiber, kırmızı biber, kimyon, kekik; tortilla 2 adet (80 g), limon.","Gluten, süt ve süt ürünleri."),
 P("Tavuklar","Izgara Tavuk","ızgara-tavuk.jpg","Marine edilmiş ızgara tavuk ve közlenmiş sebzeler.","430 kcal","315 g (garnitür dahil)","Tavuk göğsü 200 g, zeytinyağı 10 ml, tuz 2 g, karabiber 1 g, kekik 1 g, kırmızı biber 1 g, isteğe bağlı sarımsak 3 g; ızgara sebze 100 g, limon 15 g."),
