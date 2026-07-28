@@ -479,9 +479,6 @@ P("Soğuk Kahveler","Ice Caramel Macchiato","ice-caramel-macchiato.jpg","Karamel
 P("Soğuk Kahveler","Ice Chocolate Mocha","ice-chocolate-mocha.jpg","Çikolatalı buzlu mocha.","","1 Bardak","Espresso, Süt, Çikolata, Buz","Süt içerir."),
 P("Soğuk Kahveler","Ice Latte","ice-latte.jpg","Buzlu latte.","","1 Bardak","Espresso, Süt, Buz","Süt içerir."),
 
-P("Çorbalar","Domates Çorbası","domates-corbasi.jpg","Taze domates ile hazırlanan, kaşar peyniri ve kruton ekmeği ile servis edilen sıcak çorba.","","1 Kase","Domates, Tereyağı, Un","Süt, Gluten içerir."),
-P("Çorbalar","Kremalı Mantar Çorbası","kremali-mantar-corbasi.jpg","Taze mantar ve krema ile hazırlanan yumuşak içimli çorba.","","1 Kase","Mantar, Krema, Tereyağı","Süt, Gluten içerir."),
-
 P("Sıcak Kahveler","Americano","americano.jpg","Espresso bazlı sıcak kahve.","","1 Fincan","Espresso, Sıcak Su","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahveler","Caffe Latte","caffe-latte.jpg","Espresso ve buharda ısıtılmış süt ile hazırlanır.","","1 Fincan","Espresso, Süt","Süt içerir."),
 P("Sıcak Kahveler","Cappuccino","cappuccino.jpg","Espresso, süt ve süt köpüğü ile hazırlanır.","","1 Fincan","Espresso, Süt","Süt içerir."),
