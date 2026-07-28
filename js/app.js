@@ -585,7 +585,6 @@ P("Rakılar","Tekirdağ Altın Seri 35 CL","tekirdag-altin-seri-35-cl.jpg","35 C
 P("Rakılar","Tekirdağ Altın Seri 50 CL","tekirdag-altin-seri-50-cl.jpg","50 CL Tekirdağ Altın Seri.","","50 CL","Rakı","Alkol içerir."),
 P("Rakılar","Tekirdağ Altın Seri 70 CL","tekirdag-altin-seri-70-cl.jpg","70 CL Tekirdağ Altın Seri.","","70 CL","Rakı","Alkol içerir."),
 P("Rakılar","Tekirdağ Altın Seri 100 CL","tekirdag-altin-seri-100-cl.jpg","100 CL Tekirdağ Altın Seri.","","100 CL","Rakı","Alkol içerir."),
-
 P("Rakılar","Beylerbeyi 20 CL","beylerbeyi-20-cl.jpg","20 CL Beylerbeyi Rakısı.","","20 CL","Rakı","Alkol içerir."),
 P("Rakılar","Beylerbeyi 35 CL","beylerbeyi-35-cl.jpg","35 CL Beylerbeyi Rakısı.","","35 CL","Rakı","Alkol içerir."),
 P("Rakılar","Beylerbeyi 50 CL","beylerbeyi-50-cl.jpg","50 CL Beylerbeyi Rakısı.","","50 CL","Rakı","Alkol içerir."),
@@ -597,15 +596,14 @@ P("Rakılar","Efe Gold 35 CL","efe-gold-35-cl.jpg","35 CL Efe Gold Rakısı.",""
 P("Rakılar","Efe Gold 50 CL","efe-gold-50-cl.jpg","50 CL Efe Gold Rakısı.","","50 CL","Rakı","Alkol içerir."),
 P("Rakılar","Efe Gold 70 CL","efe-gold-70-cl.jpg","70 CL Efe Gold Rakısı.","","70 CL","Rakı","Alkol içerir."),
 P("Rakılar","Efe Gold 100 CL","efe-gold-100-cl.jpg","100 CL Efe Gold Rakısı.","","100 CL","Rakı","Alkol içerir."),
-
 P("Rakılar","Kulüp Rakı 35 CL","kulup-raki-35-cl.jpg","35 CL Kulüp Rakı.","","35 CL","Rakı","Alkol içerir."),
 P("Rakılar","Kulüp Rakı 70 CL","kulup-raki-70-cl.jpg","70 CL Kulüp Rakı.","","70 CL","Rakı","Alkol içerir."),
-
 P("Rakılar","Yeni Rakı 20 CL","yeni-raki-20-cl.jpg","20 CL Yeni Rakı.","","20 CL","Rakı","Alkol içerir."),
 P("Rakılar","Yeni Rakı 35 CL","yeni-raki-35-cl.jpg","35 CL Yeni Rakı.","","35 CL","Rakı","Alkol içerir."),
 P("Rakılar","Yeni Rakı 50 CL","yeni-raki-50-cl.jpg","50 CL Yeni Rakı.","","50 CL","Rakı","Alkol içerir."),
 P("Rakılar","Yeni Rakı 70 CL","yeni-raki-70-cl.jpg","70 CL Yeni Rakı.","","70 CL","Rakı","Alkol içerir."),
 P("Rakılar","Yeni Rakı 100 CL","yeni-raki-100-cl.jpg","100 CL Yeni Rakı.","","100 CL","Rakı","Alkol içerir."),
+
 ,
 ];
 function openMenu(){document.getElementById("intro").style.display="none";document.getElementById("welcome").style.display="none";menu.style.display="block";document.body.style.overflow="auto";showCategories()} window.openMenu=openMenu;
