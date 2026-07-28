@@ -365,8 +365,6 @@ P("Mezeler","Şakşuka","saksuka.jpg","Kızarmış patlıcan ve biberlerin domat
 
 P("Mezeler","Pancar","pancar.jpg","Haşlanmış pancarın sarımsaklı yoğurt ile servis edildiği soğuk meze.","210 kcal","170 g","Pancar, süzme yoğurt, sarımsak, zeytinyağı.","Süt ve süt ürünleri."),
 
-P("Mezeler","Yoğurt","yogurt.jpg","Süzme yoğurt üzerine zeytinyağı ile servis edilir.","170 kcal","150 g","Süzme yoğurt.","Süt ve süt ürünleri."),
-
 P("Mezeler","Peynir","peynir.jpg","Günlük beyaz peynir tabağı.","260 kcal","150 g","Beyaz peynir.","Süt ve süt ürünleri."),
 
 P("Mezeler","İthal Peynir Tabağı","ithal-peynir-tabagi.jpg","Seçkin ithal peynir çeşitleriyle hazırlanan özel tabak.","520 kcal","220 g","Brie, Gouda, Cheddar, Parmesan, Grissini.","Gluten, süt ve süt ürünleri."),
