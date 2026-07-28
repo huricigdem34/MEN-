@@ -176,7 +176,7 @@ const PRICE_MAP = {
 "Bacardi Fizz":500,
 "Peach Margarita":850,
 "Demleme Çay":50,
-"Demleme Fincan Çay":90,
+"Demleme Fincan Çay":100,
 "Sade Nescafe":110,
 "Sütlü Nescafe":130,
 "Sahlep":130,
