@@ -352,30 +352,30 @@ function ingredientIconCards(text){
 const products=[
 // Yalnızca kullanıcının gerçek reçete dosyalarındaki yemekler
 P("Mezeler","Atom","atom.jpg","Acı biberli süzme yoğurt mezesi.","250 kcal","160 g","Süzme yoğurt, sarımsak, kuru acı biber, tereyağı, zeytinyağı, tuz.","Süt ve süt ürünleri."),
-P("Mezeler","Arnavut Ciğeri","arnavut-cigeri.jpg","Soğan salatası ve limonla servis edilen dana ciğeri.","460 kcal","250 g (garnitür dahil)","Dana ciğeri, un, ayçiçek yağı, tuz, kuru soğan, sumak, maydanoz, limon.","Gluten."),
+P("Mezeler","Arnavut Ciğeri","arnavut-cigeri.jpg","Soğan salatası, domates ve limonla servis edilen dana ciğeri.","460 kcal","250 g (garnitür dahil)","Dana ciğeri, un, ayçiçek yağı, tuz, kuru soğan, sumak, maydanoz, limon, domates.","Gluten."),
 P("Mezeler","Fava","fava.jpg","Zeytinyağlı kuru bakla ezmesi.","290 kcal","150 g","Kuru bakla 70 g, soğan 25 g, zeytinyağı 25 ml, su, şeker 2 g, tuz 2 g, limon suyu 5 ml, dereotu 3 g."),
-P("Mezeler","Haydari","haydari.jpg","Yoğun kıvamlı klasik yoğurt mezesi.","230 kcal","160 g","Süzme yoğurt 120 g, beyaz peynir 25 g, sarımsak 3 g, dereotu 4 g, kuru nane 1 g, zeytinyağı 8 ml, tuz 1 g.","Süt ve süt ürünleri."),
-P("Mezeler","Patlıcan Gömme","patlican-gomme.jpg","Köz patlıcan, yoğurt ve tahinle hazırlanan soğuk meze.","260 kcal","180 g","Közlenmiş patlıcan 100 g, süzme yoğurt 60 g, sarımsak 3 g, tahin 10 g, zeytinyağı 15 ml, limon suyu 5 ml, tuz 2 g, maydanoz.","Süt ve süt ürünleri, susam."),
-P("Mezeler","Kuru Cacık","kuru-cacik.jpg","Süzme yoğurt ve salatalıkla yoğun kıvamlı cacık.","190 kcal","185 g","Süzme yoğurt 120 g, salatalık 50 g, sarımsak 3 g, zeytinyağı 13 ml, dereotu 3 g, kuru nane, tuz 2 g.","Süt ve süt ürünleri."),
-P("Mezeler","Havuç Tarator","havuc-tarator.jpg","Sotelenmiş havuç, süzme yoğurt ve ceviz.","300 kcal","200 g","Havuç 80 g, süzme yoğurt 100 g, sarımsak 3 g, zeytinyağı 15 ml, ceviz 13 g, tuz 2 g, isteğe bağlı dereotu.","Süt ve süt ürünleri, ceviz."),
+P("Mezeler","Haydari","haydari.jpg","Yoğun kıvamlı klasik yoğurt mezesi.","230 kcal","160 g","sarımsak 3 g, kuru nane 3 g, zeytinyağı 8 ml, tuz 1 g.","Süt ve süt ürünleri."),
+P("Mezeler","Patlıcan Gömme","patlican-gomme.jpg","Köz patlıcan ve yoğurtla hazırlanan soğuk meze.","260 kcal","180 g","Közlenmiş patlıcan 100 g, közlenmiş biber 20 g, süzme yoğurt 60 g, sarımsak 3 g, zeytinyağı 15 ml, limon suyu 5 ml, tuz 2 g, maydanoz.","Süt ve süt ürünleri."),
+P("Mezeler","Kuru Cacık","kuru-cacik.jpg","Süzme yoğurt ve salatalıkla yoğun kıvamlı cacık.","190 kcal","185 g","Süzme yoğurt 120 g, salatalık 50 g, sarımsak 3 g, zeytinyağı 13 ml, kuru nane, tuz 2 g.","Süt ve süt ürünleri."),
+P("Mezeler","Havuç Tarator","havuc-tarator.jpg","Sotelenmiş havuç, süzme yoğurt.","300 kcal","200 g","Havuç 80 g, süzme yoğurt 100 g, sarımsak 3 g, zeytinyağı 15 ml, tuz 2 g, isteğe bağlı dereotu.","Süt ve süt ürünleri, ceviz."),
 P("Mezeler","Deniz Börülcesi","deniz-borulcesi.jpg","Sarımsaklı limon ve zeytinyağıyla servis edilir.","120 kcal","90–100 g","Deniz börülcesi 100 g, zeytinyağı 10 ml, limon suyu 10 ml, sarımsak 3 g."),
-P("Mezeler","Barbunya Pilaki","barbunya-pilaki.jpg","Zeytinyağlı barbunya, havuç ve patates ile hazırlanan klasik meze.","240 kcal","180 g","Barbunya, havuç, patates, soğan, domates, zeytinyağı, sarımsak, maydanoz.","Bilinen temel alerjen yoktur."),
+P("Mezeler","Barbunya Pilaki","barbunya-pilaki.jpg","Zeytinyağlı barbunya ve havuç ile hazırlanan klasik meze.","240 kcal","180 g","Barbunya, havuç, soğan, domates, zeytinyağı, sarımsak, maydanoz.","Bilinen temel alerjen yoktur."),
 
-P("Mezeler","Şakşuka","saksuka.jpg","Kızarmış patlıcan ve biberlerin domates sosuyla buluştuğu geleneksel meze.","310 kcal","200 g","Patlıcan, kabak, yeşil biber, domates sosu, sarımsak, zeytinyağı.","Bilinen temel alerjen yoktur."),
+P("Mezeler","Şakşuka","saksuka.jpg","Kızarmış patlıcan ve biberlerin domates sosuyla buluştuğu geleneksel meze.","310 kcal","200 g","Patlıcan, patates, yeşil biber, domates sosu, sarımsak, zeytinyağı.","Bilinen temel alerjen yoktur."),
 
-P("Mezeler","Pancar","pancar.jpg","Haşlanmış pancarın sarımsaklı yoğurt ile servis edildiği soğuk meze.","210 kcal","170 g","Pancar, süzme yoğurt, sarımsak, zeytinyağı.","Süt ve süt ürünleri."),
+P("Mezeler","Pancar","pancar.jpg","Haşlanmış pancarın servis edildiği soğuk meze.","210 kcal","170 g","Pancar, limon, sarımsak, zeytinyağı.","Süt ve süt ürünleri."),
 
-P("Mezeler","Peynir","peynir.jpg","Günlük beyaz peynir tabağı.","260 kcal","150 g","Beyaz peynir.","Süt ve süt ürünleri."),
+P("Mezeler","Peynir","peynir.jpg","Günlük peynir tabağı.","260 kcal","150 g","Beyaz peynir.","Süt ve süt ürünleri."),
 
 P("Mezeler","İthal Peynir Tabağı","ithal-peynir-tabagi.jpg","Seçkin ithal peynir çeşitleriyle hazırlanan özel tabak.","520 kcal","220 g","Brie, Gouda, Cheddar, Parmesan, Grissini.","Gluten, süt ve süt ürünleri."),
 
-P("Mezeler","Enginar","enginar.jpg","Zeytinyağlı enginar kalbi, bezelye ve havuç ile hazırlanır.","180 kcal","180 g","Enginar, bezelye, havuç, patates, zeytinyağı.","Bilinen temel alerjen yoktur."),
+P("Mezeler","Enginar","enginar.jpg","Zeytinyağlı enginar kalbi ve bezelye ile hazırlanır.","180 kcal","180 g","Enginar, bezelye, zeytinyağı.","Bilinen temel alerjen yoktur."),
 
 P("Mezeler","DSP","dsp.jpg","Domates salatalık peynir.","340 kcal","220 g","İçeriğe göre değişebilir."),
 
 P("Mezeler","Meyve Tabağı","meyve-tabagi.jpg","Mevsim meyvelerinden hazırlanan ferah tabak.","190 kcal","350 g","Karpuz, kavun, üzüm, portakal, kivi, çilek.","Bilinen temel alerjen yoktur."),
 
-P("Mezeler","Ordövr Tabağı","ordovr-tabagi.jpg","Karışık peynir, şarküteri ve garnitürlerden oluşan başlangıç tabağı.","690 kcal","420 g","Peynir çeşitleri, salam, zeytin, turşu, domates, salatalık.","Süt ve süt ürünleri."),
+P("Mezeler","Ordövr Tabağı","ordovr-tabagi.jpg","Karışık peynir ve mezelerden oluşan başlangıç tabağı.","690 kcal","420 g","Peynir çeşitleri, 6 çeşit meze.","Süt ve süt ürünleri."),
 
 P("Mezeler","Karpuz","karpuz.jpg","Soğuk servis edilen dilim karpuz.","90 kcal","300 g","Karpuz.","Bilinen temel alerjen yoktur."),
 
@@ -387,27 +387,27 @@ P("Omletler","Sucuklu Omlet","sucuklu-omlet.jpg","Hafif kızartılmış sucuklu 
 P("Omletler","Sahanda Yumurta","sahanda-yumurta.jpg","Tereyağında sahanda iki yumurta.","220 kcal","110 g","Yumurta 2 adet (100 g), tereyağı 10 g, tuz 1 g, isteğe bağlı karabiber.","Yumurta, süt ve süt ürünleri."),
 P("Omletler","Sahanda Sucuklu Yumurta","sahanda-sucuklu-yumurta.jpg","Tereyağında sucuk ve sahanda yumurta.","420 kcal","160 g","Yumurta 2 adet (100 g), sucuk 50 g, tereyağı 10 g, isteğe bağlı tuz ve karabiber.","Yumurta, süt ve süt ürünleri."),
 
-P("Krepler","Tavuklu Krep","tavuklu-krep.jpg","Kremalı tavuk harcı ve kaşarla fırınlanan krep.","760 kcal","420 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 15 ml, tavuk göğsü 120 g, mantar 50 g, soğan 20 g, kapya biber 20 g, yeşil biber 15 g, krema 40 ml, kaşar 30 g, tuz, karabiber, kekik.","Gluten, yumurta, süt ve süt ürünleri."),
-P("Krepler","Mantarlı Krep","mantarli-krep.jpg","Kremalı mantar harcı ve kaşarla fırınlanan krep.","680 kcal","390 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 5 ml, mantar 120 g, soğan 20 g, sarımsak 3 g, tereyağı 10 g, krema 50 ml, kaşar 30 g, tuz, karabiber, kekik, maydanoz.","Gluten, yumurta, süt ve süt ürünleri."),
-P("Krepler","Tavuklu Mantarlı Krep","tavuklu-mantarli-krep.jpg","Tavuk ve mantarlı kremalı harçla fırınlanan krep.","780 kcal","420 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 5 ml, tavuk 100 g, mantar 80 g, soğan 20 g, sarımsak 3 g, tereyağı 10 g, krema 50 ml, kaşar 30 g, tuz, karabiber, kekik, maydanoz.","Gluten, yumurta, süt ve süt ürünleri."),
+P("Krepler","Tavuklu Krep","tavuklu-krep.jpg","Kremalı tavuk harcı ve kaşarla fırınlanan krep.","760 kcal","300 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 15 ml, tavuk göğsü 200 g, krema 40 ml, kaşar 30 g, tuz, karabiber, kekik.","Gluten, yumurta, süt ve süt ürünleri."),
+P("Krepler","Mantarlı Krep","mantarli-krep.jpg","Kremalı mantar harcı ve kaşarla fırınlanan krep.","680 kcal","390 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 5 ml, mantar 200 g, sarımsak 3 g, tereyağı 10 g, krema 50 ml, kaşar 30 g, tuz, karabiber, kekik, maydanoz.","Gluten, yumurta, süt ve süt ürünleri."),
+P("Krepler","Tavuklu Mantarlı Krep","tavuklu-mantarli-krep.jpg","Tavuk ve mantarlı kremalı harçla fırınlanan krep.","780 kcal","420 g","Un 50 g, yumurta 1 adet, süt 100 ml, sıvı yağ 5 ml, tavuk 100 g, mantar 80 g, sarımsak 3 g, tereyağı 10 g, krema 50 ml, kaşar 30 g, tuz, karabiber, kekik, maydanoz.","Gluten, yumurta, süt ve süt ürünleri."),
 
 P("Menemen","Sade Menemen","sade-menemen.jpg","Domates ve sivri biberle klasik menemen.","330 kcal","270 g","Yumurta 2 adet (100 g), domates 120 g, yeşil sivri biber 30 g, tereyağı 10 g, zeytinyağı 5 ml, tuz 2 g, isteğe bağlı karabiber ve pul biber.","Yumurta, süt ve süt ürünleri."),
 P("Menemen","Kaşarlı Menemen","kasarli-menemen.jpg","Kaşar peyniriyle zenginleştirilmiş menemen.","470 kcal","310 g","Yumurta 2 adet (100 g), domates 120 g, yeşil sivri biber 30 g, kaşar 40 g, tereyağı 10 g, zeytinyağı 5 ml, tuz 2 g, isteğe bağlı karabiber ve pul biber.","Yumurta, süt ve süt ürünleri."),
 
 P("Salatalar","Sezar Salatası","sezar-salatasi.jpg","Izgara tavuk, parmesan ve krutonlu Sezar salatası.","520 kcal","325 g","Izgara tavuk 120 g, marul 100 g, kruton 25 g, parmesan 20 g; Sezar sos: mayonez 25 g, hardal 5 g, limon suyu 10 ml, sarımsak 3 g, zeytinyağı 10 ml, Worcestershire sos 5 ml, tuz, karabiber.","Gluten, süt ve süt ürünleri, yumurta, hardal; Worcestershire içeriğine göre balık içerebilir."),
 P("Salatalar","Çoban Salata","coban-salata.jpg","Günlük doğranmış taze sebzeler.","180 kcal","210 g","Domates 80 g, salatalık 60 g, yeşil sivri biber 20 g, soğan 20 g, maydanoz 5 g, zeytinyağı 10 ml, limon suyu 10 ml, tuz 2 g, isteğe bağlı sumak."),
-P("Salatalar","Kaşık Salata","kasik-salata.jpg","İnce doğranmış sebzeler ve nar ekşisi.","210 kcal","230 g","Domates 80 g, salatalık 60 g, kapya biber 20 g, yeşil sivri biber 15 g, soğan 20 g, maydanoz 8 g, nar ekşisi 10 ml, zeytinyağı 10 ml, limon suyu 5 ml, tuz 2 g, isteğe bağlı sumak."),
+P("Salatalar","Kaşık Salata","kasik-salata.jpg","İnce doğranmış sebzeler ve nar ekşisi.","210 kcal","230 g","Domates 80 g, salatalık 60 g, yeşil sivri biber 15 g, soğan 20 g, roka 8 g, nar ekşisi 10 ml, zeytinyağı 10 ml, limon suyu 5 ml, tuz 2 g, isteğe bağlı sumak."),
 P("Salatalar","Yeşil Salata","yesil-salata.jpg","Taze yeşilliklerden hafif salata.","150 kcal","175 g","Göbek marul 50 g, kıvırcık 40 g, roka 15 g, maydanoz 5 g, dereotu 3 g, salatalık 40 g, zeytinyağı 10 ml, limon suyu 10 ml, tuz 2 g."),
-P("Salatalar","Hellim Salatası","hellim-salatasi.jpg","Izgara hellim ve Akdeniz yeşillikleri.","430 kcal","300 g","Hellim 80 g, göbek marul 50 g, Akdeniz yeşillikleri 30 g, roka 15 g, cherry domates 50 g, salatalık 40 g, kırmızı soğan 15 g, zeytinyağı 10 ml, limon suyu 10 ml, nar ekşisi 5 ml, tuz, karabiber.","Süt ve süt ürünleri."),
+P("Salatalar","Hellim Salatası","hellim-salatasi.jpg","Izgara hellim ve Mevsim yeşillikleri.","430 kcal","300 g","Hellim 80 g, göbek marul 50 g, Akdeniz yeşillikleri 30 g, roka 15 g, cherry domates 50 g, salatalık 40 g, kırmızı soğan 15 g, zeytinyağı 10 ml, limon suyu 10 ml, nar ekşisi 5 ml, tuz, karabiber.","Süt ve süt ürünleri."),
 P("Salatalar","Tavuk Salatası","tavuk-salatasi.jpg","Izgara tavuk, taze yeşillikler ve özel sos ile hazırlanır.","480 kcal","320 g","Izgara tavuk, marul, roka, domates, salatalık, mısır, zeytinyağı.","Bilinen temel alerjen yoktur."),
 
 P("Salatalar","Greek Salata","greek-salata.jpg","Beyaz peynirli Akdeniz usulü Yunan salatası.","360 kcal","300 g","Domates, salatalık, beyaz peynir, zeytin, kırmızı soğan, kekik, zeytinyağı.","Süt ve süt ürünleri."),
 
-P("Makarnalar","Spaghetti Napoletana","spaghetti-napoletana.jpg","Domates, sarımsak ve fesleğenli spaghetti.","560 kcal","300 g","Spaghetti 100 g, domates veya domates püresi 150 g, domates salçası 10 g, sarımsak 5 g, zeytinyağı 15 ml, fesleğen 5 g, tuz 3 g, karabiber 1 g, şeker 2 g, isteğe bağlı parmesan 15 g.","Gluten; parmesan eklenirse süt ve süt ürünleri."),
-P("Makarnalar","Penne Chicken Mushroom","penne-chicken-mushroom.jpg","Kremalı tavuk ve mantarlı penne.","760 kcal","380 g","Penne 100 g, tavuk göğsü 100 g, mantar 70 g, soğan 20 g, sarımsak 5 g, sıvı yağ 10 ml, tereyağı 10 g, krema 80 ml, parmesan 15 g, tuz 3 g, karabiber 1 g, kekik 1 g, maydanoz 3 g.","Gluten, süt ve süt ürünleri."),
+P("Makarnalar","Spaghetti Napoletana","spaghetti-napoletana.jpg","Domates ve sarımsaklı spaghetti.","560 kcal","300 g","Spaghetti 100 g, domates veya domates püresi 150 g, sarımsak 5 g, zeytinyağı 15 ml, tuz 3 g, karabiber 1 g, şeker 2 g, isteğe bağlı parmesan 15 g.","Gluten; parmesan eklenirse süt ve süt ürünleri."),
+P("Makarnalar","Penne Chicken Mushroom","penne-chicken-mushroom.jpg","Kremalı tavuk ve mantarlı penne.","760 kcal","380 g","Penne 100 g, tavuk göğsü 100 g, mantar 70 g, sarımsak 5 g, sıvı yağ 10 ml, tereyağı 10 g, krema 80 ml, parmesan 15 g, tuz 3 g, karabiber 1 g, kekik 1 g, maydanoz 3 g.","Gluten, süt ve süt ürünleri."),
 P("Makarnalar","Spaghetti alla Bolognese","spaghetti-alla-bolognese.jpg","Dana kıymalı yoğun domates soslu spaghetti.","700 kcal","380 g","Spaghetti 100 g, dana kıyma 100 g, domates püresi 120 g, domates salçası 10 g, soğan 30 g, havuç 20 g, kereviz sapı 15 g, sarımsak 5 g, zeytinyağı 15 ml, tuz, karabiber, kekik, şeker, parmesan 15 g.","Gluten, süt ve süt ürünleri; kereviz."),
 P("Makarnalar","Penne Arrabbiata","penne-arrabbiata.jpg","Acı pul biberli domates sosunda penne.","540 kcal","300 g","Penne 100 g, domates püresi, domates salçası, sarımsak, zeytinyağı, acı pul biber, tuz, karabiber, şeker, maydanoz, isteğe bağlı parmesan.","Gluten; parmesan eklenirse süt ve süt ürünleri."),
-P("Makarnalar","Penne alla Carbonara","penne-alla-carbonara.jpg","Füme et, yumurta sarısı, parmesan ve kremalı penne.","820 kcal","330 g","Penne 100 g, dana veya hindi füme 50 g, yumurta sarısı 2 adet (40 g), parmesan 25 g, krema 50 ml, tereyağı 10 g, isteğe bağlı sarımsak 3 g, karabiber 2 g, tuz 2 g.","Gluten, yumurta, süt ve süt ürünleri."),
+P("Makarnalar","Penne alla Carbonara","penne-alla-carbonara.jpg","Dana jambon, parmesan ve kremalı penne.","820 kcal","330 g","Penne 100 g, dana jambon 50 g, parmesan 25 g, krema 50 ml, tereyağı 10 g, isteğe bağlı sarımsak 3 g, karabiber 2 g, tuz 2 g.","Gluten."),
 
 P("Tavuklar","Soya Soslu Tavuk","soya-soslu-tavuk.jpg","Soya sosu ve mantarla sotelenmiş tavuk.","520 kcal","330 g","Tavuk göğsü 180 g, soya sosu, mantar 50 g, yağ, tuz ve karabiber.","Soya; soya sosuna göre gluten içerebilir."),
 P("Tavuklar","Köri Soslu Tavuk","kori-soslu-tavuk.jpg","Kremalı köri sosunda tavuk, çarliston biber ve kapya biber.","650 kcal","390 g","Tavuk 180 g, biber 50 g, sarımsak 5 g, tereyağı 10 g, sıvı yağ 10 ml, krema 100 ml, köri 5 g, tuz 2 g, karabiber 1 g.","Süt ve süt ürünleri;gluten."),
@@ -418,7 +418,7 @@ P("Tavuklar","Tavuk Güveç","tavuk-guvec.jpg","Sebze ve kaşarla fırınlanan t
 P("Tavuklar","Mexican Tavuk","mexican-tavuk.jpg","Mısır ve kırmızı fasulyeli baharatlı tavuk.","590 kcal","410 g","Tavuk, soğan, sarımsak, biberler, domates püresi, mısır, haşlanmış kırmızı fasulye, tereyağı, zeytinyağı, kekik, acı pul biber."),
 P("Tavuklar","Mantarlı Tavuk","mantarli-tavuk.jpg","Kremalı mantar soslu tavuk.","670 kcal","410 g","Tavuk 180 g, mantar 100 g, sarımsak 5 g, tereyağı 10 g, krema 80 ml, tuz 2 g, karabiber 1 g, kekik 1 g.","Süt ve süt ürünleri."),
 
-P("Et Yemekleri","Yaprak Kavurma","yaprak-kavurma.jpg","Dana bonfileden yüksek ateşte yaprak kavurma.","560 kcal","285 g","Dana bonfile 180 g, tereyağı 15 g, zeytinyağı 10 ml, soğan 40 g, sarımsak 5 g, yeşil sivri biber 30 g, tuz 2 g, karabiber 1 g, kekik 1 g.","Süt ve süt ürünleri."),
+P("Et Yemekleri","Yaprak Kavurma","yaprak-kavurma.jpg","Dana bonfileden yüksek ateşte yaprak kavurma.","560 kcal","285 g","Dana bonfile 180 g, tereyağı 15 g, soya sosu 10 ml, zeytinyağı 10 ml, sarımsak 5 g,tuz 2 g, karabiber 1 g, kekik 1 g.","Süt ve süt ürünleri, Soya sosu."),
 P("Et Yemekleri","Fillet Steak","fillet-steak.jpg","Tereyağı ve aromatik otlarla pişmiş dana bonfile.","780 kcal","460 g (garnitür dahil)","Dana bonfile 220 g, tereyağı 15 g, zeytinyağı 10 ml, sarımsak 5 g, taze biberiye 3 g, taze kekik 2 g, tuz 3 g, karabiber 2 g; patates püresi 120 g.","Süt ve süt ürünleri."),
 P("Et Yemekleri","Pepper Steak","pepper-steak.jpg","Kremalı tane karabiber soslu dana bonfile.","840 kcal","500 g (garnitür dahil)","Dana bonfile 200 g, mantar 80 g, zeytinyağı 10 ml, tereyağı 25 g, tuz; sarımsak 3 g, tane karabiber 5 g, krema 80 ml, demi-glace veya et suyu 50 ml, ızgara sebze 80 g.","Süt ve süt ürünleri; isteğe bağlı hardal."),
 P("Et Yemekleri","Mexican Steak","mexican-steak.jpg","Meksika soslu dana bonfile.","800 kcal","520 g (garnitür dahil)","Dana bonfile 220 g, zeytinyağı 10 ml, tereyağı 10 g, tuz, karabiber; kapya biber 40 g, yeşil biber 30 g, kırmızı soğan 40 g, mısır 30 g, kırmızı fasulye 40 g, domates püresi 60 g, sarımsak 5 g, kimyon, kırmızı biber, acı pul biber.","Süt ve süt ürünleri."),
@@ -427,10 +427,10 @@ P("Et Yemekleri","Izgara Köfte","izgara-kofte.jpg","Izgara dana köfte ve klasi
 P("Et Yemekleri","Kaşarlı Köfte","kasarli-kofte.jpg","Izgara dana köftelerinin içinde eritilmiş kaşar peyniri ile hazırlanır. Pilav, patates kızartması ve mevsim salatası ile servis edilir.","890 kcal","470 g","Dana kıyma, kaşar peyniri, soğan, galeta unu, yumurta, baharatlar.","Gluten, yumurta, süt ve süt ürünleri."),
 P("Et Yemekleri","Kuzu Pirzola","kuzu-pirzola.jpg","Özel baharatlarla marine edilmiş kuzu pirzola. Pilav, patates kızartması ve mevsim salatası ile servis edilir.","760 kcal","300 g","Kuzu pirzola, zeytinyağı, sarımsak, kekik, biberiye.","Bilinen temel alerjen yoktur."),
 
-P("Burgerler","Hamburger","hamburger.jpg","Dana köfteli klasik hamburger.","720 kcal","360 g","Hamburger ekmeği 1 adet (80 g), dana hamburger köftesi 150 g, cheddar 20 g, marul 15 g, domates 30 g, kornişon turşu 20 g, tereyağı 5 g, isteğe bağlı sıvı yağ 5 ml.","Gluten, süt ve süt ürünleri."),
-P("Aperatifler","Anne Patatesi","anne-patatesi.jpg","Özel baharatlı çıtır patates.","520 kcal","250 g","Patates, baharat."),
+P("Burgerler","Hamburger","hamburger.jpg","Dana köfteli klasik hamburger.","720 kcal","360 g","Hamburger ekmeği 1 adet (80 g), dana hamburger köftesi 150 g, marul 15 g, domates 30 g, kornişon turşu 20 g, tereyağı 5 g, isteğe bağlı sıvı yağ 5 ml.","Gluten, süt ve süt ürünleri."),
+P("Aperatifler","Anne Patatesi","anne-patatesi.jpg","klasik çıtır patates.","520 kcal","250 g","Patates."),
 P("Aperatifler","Anne Patatesi Soslu","anne-patatesi-soslu.jpg","Özel soslarla servis edilen çıtır patates.","610 kcal","300 g","Patates, özel soslar."),
-P("Aperatifler","Bira Tabağı","bira-tabagi.jpg","Sosis, bonfrit, sigara böreği, soğan halkası, kaşar pane.","1180 kcal","750 g","Karışık aperatifler.","Gluten, süt ürünleri."),
+P("Aperatifler","Bira Tabağı","bira-tabagi.jpg","Sosis, bonfrit, sigara böreği, soğan halkası, kaşar pane.","1180 kcal","500 g","Karışık aperatifler.","Gluten, süt ürünleri."),
 P("Aperatifler","Bonfrit","bonfrit.jpg","Çıtır patates kızartması.","480 kcal","220 g","Patates."),
 P("Aperatifler","Hellim Peyniri","hellim-peyniri.jpg","Izgara hellim peyniri.","430 kcal","180 g","Hellim peyniri.","Süt ve süt ürünleri."),
 P("Aperatifler","Kaşar Pane","kasar-pane.jpg","Pane kaplamalı kızarmış kaşar.","590 kcal","220 g","Kaşar peyniri.","Gluten, süt ürünleri."),
