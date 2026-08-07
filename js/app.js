@@ -506,14 +506,15 @@ P("Sıcak İçecek Çeşitleri","Sahlep","sahlep.jpg","Tarçın ile servis edile
 
 P("Kokteyl Çeşitleri","Long Island Ice Tea","long-island-ice-tea.jpg","Vodka, cin ve kola ile hazırlanan klasik kokteyl.","","Kadeh","Vodka, Bakardi, portakal likörü, Cin, Kola","Alkol içerir."),
 P("Kokteyl Çeşitleri","Sex on the Beach","sex-on-the-beach.jpg","Meyvemsi aromalı ferah kokteyl.","","Kadeh","Vodka, Şeftali Likörü, Portakal suyu, Granedin, Tekila ","Alkol içerir."),
-P("Kokteyl Çeşitleri","Mojito","mojito.jpg","Nane ve lime ile hazırlanan ferahlatıcı kokteyl.","","Kadeh","Bakardi, Esmer şeker, Nane, Lime, Soda","Alkol içerir."),
-P("Kokteyl Çeşitleri","Margarita","margarita.jpg","Tekila bazlı klasik margarita.","","Kadeh","Tekila, Portakal likörü, Şeker şurubu, Lime","Alkol içerir."),
+P("Kokteyl Çeşitleri","Mojito","mojito.jpg","Nane ve lime ile hazırlanan ferahlatıcı kokteyl.","","Kadeh","Bakardi, Esmer şeker, Nane, Limon, Soda","Alkol içerir."),
+P("Kokteyl Çeşitleri","Margarita","margarita.jpg","Tekila bazlı klasik margarita.","","Kadeh","Tekila, Portakal likörü, Şeker şurubu, Limon","Alkol içerir."),
 P("Kokteyl Çeşitleri","Apple Martini","apple-martini.jpg","Yeşil elma aromalı martini.","","Kadeh","Vodka, Martini, Soda, Elma Likörü","Alkol içerir."),
-P("Kokteyl Çeşitleri","Beyazıt","beyazit.jpg","Özel reçeteyle hazırlanan imza kokteyl.","","Kadeh","Votka, Cin, Tekila, Bakardi, Limon Suyu, Kavun Likörü, Soda","Alkol içerir."),
-P("Kokteyl Çeşitleri","Pina Colada","pina-colada.jpg","Ananas ve Hindistan cevizi aromalı tropikal kokteyl.","","Kadeh","Beyaz Rom, Ananas Suyu, Malibu, Süt, Krema","Alkol içerir."),
-P("Kokteyl Çeşitleri","Bacardi Fizz","bacardi-fizz.jpg","Bacardi rom ile hazırlanan ferah kokteyl.","","Kadeh","Bacardi Rom, Limon, Şeker Şurubu","Alkol içerir."),
-P("Kokteyl Çeşitleri","Peach Margarita","peach-margarita.jpg","Şeftali aromalı margarita.","","Kadeh","Tekila, Şeftali Likörü, Portakal Likörü, Şeftali, Lime","Alkol içerir."),
-
+P("Kokteyl Çeşitleri","Beyazıt","beyazit.jpg","Narenciye ile tamamlanan cesur bir harman.","","Kadeh","Votka, Cin, Tekila, Bakardi, Limon Suyu, Portakal Likörü, Soda","Alkol içerir."),
+P("Kokteyl Çeşitleri","Dirty Martini","dirty-martini.jpg","Zeytinin cesur dokunuşuyla eşsiz bir klasik.","","Kadeh","Cin, Zeytin suyu, Wermut dry","Alkol içerir."),
+P("Kokteyl Çeşitleri","Espresso Martini","espresso-martini.jpg","Yoğun kahve karakteriyle unutulmaz bir deneyim.","","Kadeh","Votka, Kahve Likörü, Espresso, Şeker şurubu","Alkol içerir."),
+P("Kokteyl Çeşitleri","Cosmopolitan","cosmopolitan.jpg","Meyvemsi karakteriyle pürüzsüz bir klasik.","","Votka, Portakal likörü, Limon suyu, Kızılcık suyu","Alkol içerir."),
+P("Kokteyl Çeşitleri","Negroni","negroni.jpg","İkonik İtalyan kokteyl kültürününün simgesi.","","Kadeh","Cin, Campari, Şeker şurubu, Kırmızı şarap","Alkol içerir."),
+  
 P("Kurudite Çeşitleri","Havuç","havuc.jpg","Taze havuç dilimleri.","","Porsiyon","Havuç","Bilinen temel alerjen yoktur."),
 P("Kurudite Çeşitleri","Kurudite","kurudite.jpg","Taze havuç ve salatalık dilimlerinden oluşan kurudite tabağı.","","Porsiyon","Havuç, Salatalık","Bilinen temel alerjen yoktur."),
 P("Kurudite Çeşitleri","Soğüş","sogus.jpg","Taze salatalık dilimleri.","","Porsiyon","Salatalık","Bilinen temel alerjen yoktur."),
