@@ -577,7 +577,7 @@ P("Bira Çeşitleri","Mexican Bardak","mexican-bardak.jpg","Mexican bira servis 
 P("Bira Çeşitleri","Mexican Bira","mexican-bira.jpg","Soğuk servis edilir.","","","Malt, şerbetçiotu, su","Gluten içerir."),
 P("Bira Çeşitleri","Miller 50 CL","miller-50-cl.jpg","50 CL bira. Soğuk servis edilir.","","50 CL","Malt, şerbetçiotu, su","Gluten içerir."),
 
-P("Rakı Çeşitleri","Tek Rakı","tek-raki.jpg","Tek ölçü rakı.","","Tek","Rakı","Alkol içerir."),
+P("Rakı Çeşitleri","Tek Rakı","Tek ölçü rakı.","","Tek","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Duble Rakı","duble-raki.jpg","Duble ölçü rakı.","","Duble","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Tekirdağ Altın Seri Tek","tekirdag-altin-seri-tek.jpg","Tek ölçü Tekirdağ Altın Seri.","","Tek","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Tekirdağ Altın Seri Duble","tekirdag-altin-seri-duble.jpg","Duble ölçü Tekirdağ Altın Seri.","","Duble","Rakı","Alkol içerir."),
