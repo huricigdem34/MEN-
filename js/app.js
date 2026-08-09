@@ -503,8 +503,6 @@ P("Blend İçecek Çeşitleri","Karadutlu Smoothie","karadutlu-smoothie.jpg","Ka
 P("Blend İçecek Çeşitleri","Şeftalili Smoothie","seftalili-smoothie.jpg","Şeftalili smoothie.","","1 Bardak","Şeftali","Bilinen temel alerjen yoktur."), 
 
 P("Soğuk Kahve Çeşitleri","Ice Americano","ice-americano.jpg","Buz ve espresso ile hazırlanan ferah Americano.","","1 Bardak","Espresso, Su, Buz","Bilinen temel alerjen yoktur."),
-P("Soğuk Kahve Çeşitleri","Ice Caramel Macchiato","ice-caramel-macchiato.jpg","Karamel aromalı buzlu espresso.","","1 Bardak","Espresso, Süt, Karamel Şurubu, Buz","Süt içerir."),
-P("Soğuk Kahve Çeşitleri","Ice Chocolate Mocha","ice-chocolate-mocha.jpg","Çikolatalı buzlu mocha.","","1 Bardak","Espresso, Süt, Çikolata, Buz","Süt içerir."),
 P("Soğuk Kahve Çeşitleri","Ice Latte","ice-latte.jpg","Buzlu latte.","","1 Bardak","Espresso, Süt, Buz","Süt içerir."),
 
 P("Sıcak Kahve Çeşitleri","Americano","americano.jpg","Espresso bazlı sıcak kahve.","","1 Fincan","Espresso, Sıcak Su","Bilinen temel alerjen yoktur."),
@@ -571,7 +569,7 @@ P("Şarap Çeşitleri","Beyaz Kadeh","beyaz-kadeh.jpg","Kadeh servis edilir.",""
 P("Şarap Çeşitleri","Kırmızı Kadeh","kirmizi-kadeh.jpg","Kadeh servis edilir.","","Kadeh","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Beyaz Şişe 37.5 CL","bos.jpg","37.5 CL beyaz şarap.","","37.5 CL","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Kırmızı Şişe 37.5 CL","bos.jpg","37.5 CL  kırmızı şarap.","","37.5 CL","Şarap","Alkol içerir."),
-P("Şarap Çeşitleri","Beyaz Şişe 75 CL","bos","75 CL beyaz şarap.","","75 CL","Şarap","Alkol içerir."),
+P("Şarap Çeşitleri","Beyaz Şişe 75 CL","bos.jpg","75 CL beyaz şarap.","","75 CL","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Kırmızı Şişe 75 CL","bos.jpg","75 CL kırmızı şarap.","","75 CL","Şarap","Alkol içerir."),
 
 P("Viski Çeşitleri","Tek Chivas","tek-viski.jpg","Tek ölçü Chivas Regal.","","Tek","Viski","Alkol içerir."),
