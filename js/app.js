@@ -13,8 +13,6 @@ const categories=[
 const P=(cat,name,img,desc,cal,gram,ing,all="Bilinen temel alerjen yoktur.",chef="Reçeteye uygun şekilde taze hazırlanarak servis edilir.")=>({cat,name,img,desc,cal,gram,ing,all,chef});
 ];
 const P=(cat,name,img,desc,cal,gram,ing,all="Bilinen temel alerjen yoktur.",chef="Reçeteye uygun şekilde taze hazırlanarak servis edilir.")=>({cat,name,img,desc,cal,gram,ing,all,chef});
-
-
 const PRICE_MAP = {
   "Hellim Peyniri":320,
   "Kavun":170,
