@@ -613,7 +613,7 @@ P("Bira Çeşitleri","Mexican Bardak","bos.jpg","Mexican bira servis bardağı."
 P("Bira Çeşitleri","Mexican Bira","bos.jpg","Soğuk servis edilir.","","","Malt, şerbetçiotu, su","Gluten içerir."),
 P("Bira Çeşitleri","Miller 50 CL","bos.jpg","50 CL bira. Soğuk servis edilir.","","50 CL","Malt, şerbetçiotu, su","Gluten içerir."),
 
-P("Rakı Çeşitleri","Tek Rakı","Tek ölçü rakı.","","Tek","Rakı","Alkol içerir."),
+P("Rakı Çeşitleri","Tek Rakı","bos.jpg","Tek ölçü rakı.","","Tek","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Duble Rakı","bos.jpg","Duble ölçü rakı.","","Duble","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Tekirdağ Altın Seri Tek","bos.jpg","Tek ölçü Tekirdağ Altın Seri.","","Tek","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Tekirdağ Altın Seri Duble","bos.jpg","Duble ölçü Tekirdağ Altın Seri.","","Duble","Rakı","Alkol içerir."),
