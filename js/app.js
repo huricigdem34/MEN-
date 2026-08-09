@@ -8,7 +8,9 @@ function trTitleCase(text){
 const menu=document.getElementById("menu"),categoryGrid=document.getElementById("categoryGrid"),productGrid=document.getElementById("productGrid"),menuTitle=document.getElementById("menuTitle"),backBtn=document.getElementById("backBtn"),modal=document.getElementById("detailModal");
 
 const categories=[
- {name:"Meze Çeşitleri",img:"sezar.jpg",sub:"Sofraya sıcak bir başlangıç"},{name:"Omlet Çeşitleri",img:"alfredo.jpg",sub:"Güne lezzetli bir başlangıç"},{name:"Krep Çeşitleri",img:"alfredo.jpg",sub:"Fırından sıcak krep çeşitleri"},{name:"Menemen Çeşitleri",img:"tavuk.jpg",sub:"Tavadan sıcak klasikler"},{name:"Salata Çeşitleri",img:"sezar.jpg",sub:"Taze ve hafif seçenekler"},{name:"Makarna Çeşitleri",img:"spaghetti.jpg",sub:"Özel soslar ve reçeteler"},{name:"Tavuk Çeşitleri",img:"tavuk.jpg",sub:"Izgara ve özel soslar"},{name:"Et Yemeği Çeşitleri",img:"burger.jpg",sub:"Güçlü ve seçkin lezzetler"},{name:"Aperatif Çeşitleri",img:"bonfrit.jpg",sub:"Paylaşmalık ve atıştırmalık lezzetler"},{name:"Burger Çeşitleri",img:"burger.jpg",sub:"Doyurucu Lobby lezzetleri"},{name:"Çorba Çeşitleri",img:"corbalar.jpg",sub:"Günün sıcak çorba çeşitleri"},{name:"Kurudite Çeşitleri",img:"kurudite.jpg",sub:"Taze sebzeler ve eşlikçiler"},{name:"Meşrubat Çeşitleri",img:"mesrubatlar.jpg",sub:"Soğuk içecek ve meşrubat çeşitleri"},{name:"Sıcak İçecek Çeşitleri",img:"latte.jpg",sub:"Kahve ve çay çeşitleri"},{name:"Bitki Çayı Çeşitleri",img:"bitki-caylari.jpg",sub:"Doğal, aromatik ve rahatlatıcı bitki çayları"},{name:"Sıcak Kahve Çeşitleri",img:"sicak-kahveler.jpg",sub:"Espresso bazlı kahve çeşitleri"},{name:"Soğuk Kahve Çeşitleri",img:"soguk-kahveler.jpg",sub:"Buz gibi espresso bazlı kahveler"},{name:"Blend İçecek Çeşitleri",img:"smoothie-frozen.jpg",sub:"Smoothie, frozen ve milkshake çeşitleri"},{name:"Kokteyl Çeşitleri",img:"latte.jpg",sub:"Lobby bar seçkisi"},{name:"Bira Çeşitleri",img:"biralar.jpg",sub:"Bira çeşitleri"},{name:"Rakı Çeşitleri",img:"rakılar.jpg",sub:"Rakı çeşitleri"},{name:"Viski Çeşitleri",img:"viski.jpg",sub:"Viski çeşitleri"},{name:"Şarap Çeşitleri",img:"sarap.jpg",sub:"Şarap Çeşitleri"},{name:"İthal İçecek Çeşitleri",img:"ithal-icecekler.jpg",sub:"İthal içecek çeşitleri"},
+ {name:"Meze Çeşitleri",img:"sezar.jpg",sub:"Sofraya sıcak bir başlangıç"},{name:"Omlet Çeşitleri",img:"alfredo.jpg",sub:"Güne lezzetli bir başlangıç"},{name:"Krep Çeşitleri",img:"alfredo.jpg",sub:"Fırından sıcak krep çeşitleri"},{name:"Menemen Çeşitleri",img:"tavuk.jpg",sub:"Tavadan sıcak klasikler"},{name:"Salata Çeşitleri",img:"sezar.jpg",sub:"Taze ve hafif seçenekler"},{name:"Makarna Çeşitleri",img:"spaghetti.jpg",sub:"Özel soslar ve reçeteler"},{name:"Tavuk Çeşitleri",img:"tavuk.jpg",sub:"Izgara ve özel soslar"},{name:"Et Yemeği Çeşitleri",img:"burger.jpg",sub:"Güçlü ve seçkin lezzetler"},{name:"Aperatif Çeşitleri",img:"bonfrit.jpg",sub:"Paylaşmalık ve atıştırmalık lezzetler"},{name:"Burger Çeşitleri",img:"burger.jpg",sub:"Doyurucu Lobby lezzetleri"},{name:"Çorba Çeşitleri",img:"corbalar.jpg",sub:"Günün sıcak çorba çeşitleri"},{name:"Kurudite Çeşitleri",img:"kurudite.jpg",sub:"Taze sebzeler ve eşlikçiler"},{name:"Meşrubat Çeşitleri",img:"mesrubatlar.jpg",sub:"Soğuk içecek ve meşrubat çeşitleri"},{name:"Sıcak İçecek Çeşitleri",img:"latte.jpg",sub:"Kahve ve çay çeşitleri"},{name:"Bitki Çayı Çeşitleri",img:"bitki-caylari.jpg",sub:"Doğal, aromatik ve rahatlatıcı bitki çayları"},{name:"Sıcak Kahve Çeşitleri",img:"sicak-kahveler.jpg",sub:"Espresso bazlı kahve çeşitleri"},{name:"Soğuk Kahve Çeşitleri",img:"soguk-kahveler.jpg",sub:"Buz gibi espresso bazlı kahveler"},{name:"Blend İçecek Çeşitleri",img:"smoothie-frozen.jpg",sub:"Smoothie, frozen ve milkshake çeşitleri"},{name:"Kokteyl Çeşitleri",img:"latte.jpg",sub:"Lobby bar seçkisi"},{name:"Bira Çeşitleri",img:"biralar.jpg",sub:"Bira çeşitleri"},{name:"Rakı Çeşitleri",img:"rakılar.jpg",sub:"Rakı çeşitleri"},{name:"Viski Çeşitleri",img:"viski.jpg",sub:"Viski çeşitleri"},{name:"Şarap Çeşitleri",img:"sarap.jpg",sub:"Şarap Çeşitleri"},{name:"İthal İçecek Çeşitleri",img:"ithal-icecekler.jpg",sub:"İthal içecek çeşitleri"},{name:"Şurup Çeşitleri",img:"ithal-icecekler.jpg",sub:"Sıcak ve soğuk kahvelerinize zengin bir tat katar"},
+];
+const P=(cat,name,img,desc,cal,gram,ing,all="Bilinen temel alerjen yoktur.",chef="Reçeteye uygun şekilde taze hazırlanarak servis edilir.")=>({cat,name,img,desc,cal,gram,ing,all,chef});
 ];
 const P=(cat,name,img,desc,cal,gram,ing,all="Bilinen temel alerjen yoktur.",chef="Reçeteye uygun şekilde taze hazırlanarak servis edilir.")=>({cat,name,img,desc,cal,gram,ing,all,chef});
 
@@ -240,6 +242,12 @@ const PRICE_MAP = {
 "Su":40,
 "Sıkma Portakal":160,
 "Şalgam":90,
+"Çilek":90,
+"Çikolata":90,
+"Karamel":90,
+"Beyaz Çikolata":90,
+"Fındık":90,
+"Vanilya":90,
 "Domates Çorbası":180,
 "Kremalı Mantar Çorbası":190,
 "Double Türk Kahvesi":200,
@@ -510,6 +518,13 @@ P("Sıcak Kahve Çeşitleri","Espresso Macchiato","macchiato.jpg","Süt köpüğ
 P("Sıcak Kahve Çeşitleri","Türk Kahvesi","turk-kahvesi.jpg","Geleneksel Türk kahvesi.","","1 Fincan","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Double Türk Kahvesi","double-turk-kahvesi.jpg","Geleneksel Türk kahvesi.","","1 Fincan","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 
+P("Şurup Çeşitleri","Çilek","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çilek şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çikolata şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Karamel","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","1 Fincan","Karamel şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Beyaz Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Beyaz çikolata şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Fındık","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Fındık şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Vanilya","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Vanilya şurubu","Bilinen temel alerjen yoktur."),
+  
 P("Bitki Çayı Çeşitleri","Adaçayı","bos.jpg","Geleneksel adaçayı.","","1 Fincan","Adaçayı","Bilinen temel alerjen yoktur."),
 P("Bitki Çayı Çeşitleri","Hibiskus","bos.jpg","Hibiskus bitki çayı.","","1 Fincan","Hibiskus","Bilinen temel alerjen yoktur."),
 P("Bitki Çayı Çeşitleri","Ihlamur","bos.jpg","Doğal ıhlamur çayı.","","1 Fincan","Ihlamur","Bilinen temel alerjen yoktur."),
@@ -548,6 +563,9 @@ P("İthal İçecek Çeşitleri","Double Cin","double-cin.jpg","Duble ölçü cin
 P("İthal İçecek Çeşitleri","Jager","jager.jpg","Jägermeister shot.","","Shot","Bitkisel likör","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Malibu","malibu.jpg","Hindistan cevizi aromalı rom likörü.","","Kadeh","Rom Likörü","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Tekila","tekila.jpg","Tekila shot.","","Shot","Tekila Shot","Alkol içerir."),
+P("İthal İçecek Çeşitleri","Olmeca 35 CL","olmeca-35-cl.jpg","35 CL Olmeca Tekila.","","35 CL","Tekila","Alkol içerir."),
+P("İthal İçecek Çeşitleri","Olmeca 50 CL","olmeca-50-cl.jpg","50 CL Olmeca Tekila.","","50 CL","Tekila","Alkol içerir."),
+P("İthal İçecek Çeşitleri","Olmeca 70 CL","olmeca-70-cl.jpg","70 CL Olmeca Tekila.","","70 CL","Tekila","Alkol içerir."),
 
 P("Şarap Çeşitleri","Blush Şişe 75 CL","bos.jpg","75 CL Blush şarap.","","75 CL","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Blush Kadeh","blush-kadeh.jpg","Kadeh Blush şarap.","","Kadeh","Şarap","Alkol içerir."),
@@ -557,11 +575,6 @@ P("Şarap Çeşitleri","Beyaz Şişe 37.5 CL","bos.jpg","37.5 CL beyaz şarap.",
 P("Şarap Çeşitleri","Kırmızı Şişe 37.5 CL","bos.jpg","37.5 CL  kırmızı şarap.","","37.5 CL","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Beyaz Şişe 75 CL","bos","75 CL beyaz şarap.","","75 CL","Şarap","Alkol içerir."),
 P("Şarap Çeşitleri","Kırmızı Şişe 75 CL","bos.jpg","75 CL kırmızı şarap.","","75 CL","Şarap","Alkol içerir."),
-
-
-P("İthal İçecek Çeşitleri","Olmeca 35 CL","olmeca-35-cl.jpg","35 CL Olmeca Tekila.","","35 CL","Tekila","Alkol içerir."),
-P("İthal İçecek Çeşitleri","Olmeca 50 CL","olmeca-50-cl.jpg","50 CL Olmeca Tekila.","","50 CL","Tekila","Alkol içerir."),
-P("İthal İçecek Çeşitleri","Olmeca 70 CL","olmeca-70-cl.jpg","70 CL Olmeca Tekila.","","70 CL","Tekila","Alkol içerir."),
 
 P("Viski Çeşitleri","Tek Chivas","tek-chivas.jpg","Tek ölçü Chivas Regal.","","Tek","Viski","Alkol içerir."),
 P("Viski Çeşitleri","Double Chivas","double-chivas.jpg","Duble ölçü Chivas Regal.","","Duble","Viski","Alkol içerir."),
@@ -616,7 +629,6 @@ P("Rakı Çeşitleri","Beylerbeyi 35 CL","beylerbeyi-35-cl.jpg","35 CL Beylerbey
 P("Rakı Çeşitleri","Beylerbeyi 50 CL","beylerbeyi-50-cl.jpg","50 CL Beylerbeyi Rakısı.","","50 CL","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Beylerbeyi 70 CL","beylerbeyi-70-cl.jpg","70 CL Beylerbeyi Rakısı.","","70 CL","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Beylerbeyi 100 CL","beylerbeyi-100-cl.jpg","100 CL Beylerbeyi Rakısı.","","100 CL","Rakı","Alkol içerir."),
-
 P("Rakı Çeşitleri","Efe Gold 20 CL","efe-gold-20-cl.jpg","20 CL Efe Gold Rakısı.","","20 CL","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Efe Gold 35 CL","efe-gold-35-cl.jpg","35 CL Efe Gold Rakısı.","","35 CL","Rakı","Alkol içerir."),
 P("Rakı Çeşitleri","Efe Gold 50 CL","efe-gold-50-cl.jpg","50 CL Efe Gold Rakısı.","","50 CL","Rakı","Alkol içerir."),
