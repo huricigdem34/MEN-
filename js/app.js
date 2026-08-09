@@ -62,7 +62,7 @@ const PRICE_MAP = {
   "Çıtır Tavuk Sepeti":420,
   "Bira Tabağı":420,
   "Kaşar Pane":300,
-  "Fava":170,
+  "Fava":180,
   "Deniz Börülcesi":180,
   "Haydari":170,
   "Atom":180,
@@ -249,7 +249,7 @@ const PRICE_MAP = {
 "Domates Çorbası":180,
 "Kremalı Mantar Çorbası":190,
 "Double Türk Kahvesi":200,
-"Tekmilli Fava":200,
+"Tekmilli Fava":190,
 };
 
 function nutritionGrid(p){
