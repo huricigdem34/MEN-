@@ -72,7 +72,7 @@ const PRICE_MAP = {
   "Enginar":180,
   "Şakşuka":180,
   "Meyve Tabağı":200,
-  "DSP":280,
+  "Domates salatalık ve peynir":280,
   "Karpuz":170,
   "Ordövr Tabağı":900,
   "İthal Peynir Tabağı":900,
@@ -384,7 +384,7 @@ P("Meze Çeşitleri","İthal Peynir Tabağı","ithal-peynir-tabagi.jpg","Seçkin
 
 P("Meze Çeşitleri","Enginar","enginar.jpg","Zeytinyağlı enginar kalbi ve bezelye ile hazırlanır.","180 kcal","180 g","Enginar, bezelye, zeytinyağı.","Bilinen temel alerjen yoktur."),
 
-P("Meze Çeşitleri","DSP","dsp.jpg","Domates salatalık peynir.","340 kcal","220 g","İçeriğe göre değişebilir."),
+P("Meze Çeşitleri","Domates salatalık ve peynir","dsp.jpg","Domates salatalık peynir.","340 kcal","220 g","İçeriğe göre değişebilir."),
 
 P("Meze Çeşitleri","Meyve Tabağı","meyve-tabagi.jpg","Mevsim meyvelerinden hazırlanan ferah tabak.","190 kcal","350 g","Karpuz, kavun, üzüm, portakal, kivi, çilek.","Bilinen temel alerjen yoktur."),
 
@@ -396,7 +396,7 @@ P("Meze Çeşitleri","Kavun","kavun.jpg","Soğuk servis edilen taze kavun diliml
 
 P("Omlet Çeşitleri","Sade Omlet","sade-omlet.jpg","Tereyağında klasik omlet.","280 kcal","160 g","Yumurta 3 adet (150 g), tereyağı 10 g, tuz 2 g, karabiber 1 g.","Yumurta, süt ve süt ürünleri."),
 P("Omlet Çeşitleri","Kaşarlı Omlet","kasarli-omlet.jpg","Rendelenmiş kaşar peynirli omlet.","420 kcal","200 g","Yumurta 3 adet (150 g), kaşar peyniri 40 g, tereyağı 10 g, tuz 2 g, karabiber 1 g.","Yumurta, süt ve süt ürünleri."),
-P("Omlet Çeşitleri","Sucuklu Omlet","sucuklu-omlet.jpg","Hafif kızartılmış sucuklu omlet.","480 kcal","210 g","Yumurta 3 adet (150 g), sucuk 50 g, tereyağı 10 g, tuz 1 g, karabiber 1 g.","Yumurta, süt ve süt ürünleri."),
+P("Omlet Çeşitleri","Sucuklu Omlet","sucuklu-omlet.jpg","Kasap sucuklu omlet.","480 kcal","210 g","Yumurta 3 adet (150 g), sucuk 50 g, tereyağı 10 g, tuz 1 g, karabiber 1 g.","Yumurta, süt ve süt ürünleri."),
 P("Omlet Çeşitleri","Sahanda Yumurta","sahanda-yumurta.jpg","Tereyağında sahanda iki yumurta.","220 kcal","110 g","Yumurta 2 adet (100 g), tereyağı 10 g, tuz 1 g, isteğe bağlı karabiber.","Yumurta, süt ve süt ürünleri."),
 P("Omlet Çeşitleri","Sahanda Sucuklu Yumurta","sahanda-sucuklu-yumurta.jpg","Tereyağında sucuk ve sahanda yumurta.","420 kcal","160 g","Yumurta 2 adet (100 g), sucuk 50 g, tereyağı 10 g, isteğe bağlı tuz ve karabiber.","Yumurta, süt ve süt ürünleri."),
 
