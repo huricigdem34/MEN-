@@ -167,7 +167,7 @@ const PRICE_MAP = {
 "Malibu":340,
 "Havuç":120,
 "Kurudite":130,
-"Soğüş":120,
+"Salatalık":120,
 "Turşu":120,
 "Long Island Ice Tea":600,
 "Sex on the Beach":550,
@@ -243,6 +243,7 @@ const PRICE_MAP = {
 "Domates Çorbası":180,
 "Kremalı Mantar Çorbası":190,
 "Double Türk Kahvesi":200,
+"Tekmilli Fava":200,
 };
 
 function nutritionGrid(p){
@@ -365,6 +366,7 @@ const products=[
 P("Meze Çeşitleri","Atom","atom.jpg","Acı biberli süzme yoğurt mezesi.","250 kcal","160 g","Süzme yoğurt, sarımsak, kuru acı biber, tereyağı, zeytinyağı, tuz.","Süt ve süt ürünleri."),
 P("Meze Çeşitleri","Arnavut Ciğeri","arnavut-cigeri.jpg","Soğan salatası, domates ve limonla servis edilen dana ciğeri.","460 kcal","250 g (garnitür dahil)","Dana ciğeri, un, ayçiçek yağı, tuz, kuru soğan, sumak, maydanoz, limon, domates.","Gluten."),
 P("Meze Çeşitleri","Fava","fava.jpg","Zeytinyağlı kuru bakla ezmesi.","290 kcal","150 g","Kuru bakla 70 g, soğan 25 g, zeytinyağı 25 ml, su, şeker 2 g, tuz 2 g, limon suyu 5 ml, dereotu 3 g."),
+P("Meze Çeşitleri","Tekmilli Fava","tekmilli-fava.jpg","Zeytinyağlı kuru bakla ezmesi.","290 kcal","150 g","Kuru bakla 70 g, soğan 25 g, zeytinyağı 25 ml, su, şeker 2 g, tuz 2 g, limon suyu 5 ml, dereotu 3 g."),
 P("Meze Çeşitleri","Haydari","haydari.jpg","Yoğun kıvamlı klasik yoğurt mezesi.","230 kcal","160 g","sarımsak 3 g, kuru nane 3 g, zeytinyağı 8 ml, tuz 1 g.","Süt ve süt ürünleri."),
 P("Meze Çeşitleri","Patlıcan Gömme","patlican-gomme.jpg","Köz patlıcan ve yoğurtla hazırlanan soğuk meze.","260 kcal","180 g","Közlenmiş patlıcan 100 g, közlenmiş biber 20 g, süzme yoğurt 60 g, sarımsak 3 g, zeytinyağı 15 ml, limon suyu 5 ml, tuz 2 g, maydanoz.","Süt ve süt ürünleri."),
 P("Meze Çeşitleri","Kuru Cacık","kuru-cacik.jpg","Süzme yoğurt ve salatalıkla yoğun kıvamlı cacık.","190 kcal","185 g","Süzme yoğurt 120 g, salatalık 50 g, sarımsak 3 g, zeytinyağı 13 ml, kuru nane, tuz 2 g.","Süt ve süt ürünleri."),
@@ -473,8 +475,7 @@ P("Meşrubat Çeşitleri","Limonata","limonata.jpg","Taze limon ile hazırlanan 
 P("Meşrubat Çeşitleri","Elmalı Soda","bos.jpg","Meyve aromalı maden suyu.","","200 ml","Maden Suyu","Bilinen temel alerjen yoktur."),
 P("Meşrubat Çeşitleri","Limonlu Soda","bos.jpg","Meyve aromalı maden suyu.","","200 ml","Maden Suyu","Bilinen temel alerjen yoktur."),
 P("Meşrubat Çeşitleri","Karpuz Çilek Soda","bos.jpg","Meyve aromalı maden suyu.","","200 ml","Maden Suyu","Bilinen temel alerjen yoktur."),
-
-  
+P("Meşrubat Çeşitleri","Meyve Kokteyli","meyve-kokteyli.jpg","Karışık meyvelerle hazırlanan içecek.","","1 Bardak","Karışık Meyveler","Bilinen temel alerjen yoktur."),
 P("Meşrubat Çeşitleri","Red Bull","red-bull.jpg","Enerji içeceği.","","250 ml","Enerji İçeceği","Kafein içerir."),
 P("Meşrubat Çeşitleri","Sade Soda","sade-soda.jpg","Doğal maden suyu.","","200 ml","Maden Suyu","Bilinen temel alerjen yoktur."),
 P("Meşrubat Çeşitleri","Su","su.jpg","Doğal kaynak suyu.","","500 ml","Doğal Kaynak Suyu","Bilinen temel alerjen yoktur."),
@@ -486,7 +487,6 @@ P("SBlend İçecek Çeşitleri","Mangolu Frozen","mangolu-frozen.jpg","Taze mang
 P("Blend İçecek Çeşitleri","Kivili Frozen","kivili-frozen.jpg","Taze kivi ile hazırlanan frozen.","","1 Bardak","Kivi, Buz","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Karadutlu Frozen","karadutlu-frozen.jpg","Karadut aromalı frozen.","","1 Bardak","Karadut, Buz","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Şeftalili Frozen","seftalili-frozen.jpg","Şeftali aromalı frozen.","","1 Bardak","Şeftali, Buz","Bilinen temel alerjen yoktur."),
-P("Blend İçecek Çeşitleri","Meyve Kokteyli","meyve-kokteyli.jpg","Karışık meyvelerle hazırlanan içecek.","","1 Bardak","Karışık Meyveler","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Çilekli Milkshake","cilekli-milkshake.jpg","Soğuk ve kremamsı milkshake.","","1 Bardak","Süt","Süt içerir."),
 P("Blend İçecek Çeşitleri","Çikolatalı Milkshake","cikolatali-milkshake.jpg","Soğuk ve kremamsı milkshake.","","1 Bardak","Süt","Süt içerir."),
 P("Blend İçecek Çeşitleri","Vanilyalı Milkshake","vanilyali-milkshake.jpg","Soğuk ve kremamsı milkshake.","","1 Bardak","Süt","Süt içerir."),
@@ -536,13 +536,13 @@ P("Kokteyl Çeşitleri","Espresso Martini","espresso-martini.jpg","Yoğun kahve 
 P("Kokteyl Çeşitleri","Cosmopolitan","cosmopolitan.jpg","Meyvemsi karakteriyle pürüzsüz bir klasik.","","Votka, Portakal likörü, Limon suyu, Kızılcık suyu","Alkol içerir."),
 P("Kokteyl Çeşitleri","Negroni","negroni.jpg","İkonik İtalyan kokteyl kültürününün simgesi.","","Kadeh","Cin, Campari, Şeker şurubu, Kırmızı şarap","Alkol içerir."),
   
-P("Kurudite Çeşitleri","Havuç","havuc.jpg","Taze havuç dilimleri.","","Porsiyon","Havuç","Bilinen temel alerjen yoktur."),
-P("Kurudite Çeşitleri","Kurudite","kurudite.jpg","Taze havuç ve salatalık dilimlerinden oluşan kurudite tabağı.","","Porsiyon","Havuç, Salatalık","Bilinen temel alerjen yoktur."),
-P("Kurudite Çeşitleri","Soğüş","sogus.jpg","Taze salatalık dilimleri.","","Porsiyon","Salatalık","Bilinen temel alerjen yoktur."),
-P("Kurudite Çeşitleri","Turşu","tursu.jpg","Karışık turşu tabağı.","","Porsiyon","Karışık Turşu","Bilinen temel alerjen yoktur."),
+P("Kurudite Çeşitleri","Havuç","bos.jpg","Taze havuç dilimleri.","","Porsiyon","Havuç","Bilinen temel alerjen yoktur."),
+P("Kurudite Çeşitleri","Kurudite","bos.jpg","Taze havuç ve salatalık dilimlerinden oluşan kurudite tabağı.","","Porsiyon","Havuç, Salatalık","Bilinen temel alerjen yoktur."),
+P("Kurudite Çeşitleri","Salatalık","bos.jpg","Taze salatalık dilimleri.","","Porsiyon","Salatalık","Bilinen temel alerjen yoktur."),
+P("Kurudite Çeşitleri","Turşu","bos.jpg","Karışık turşu tabağı.","","Porsiyon","Karışık Turşu","Bilinen temel alerjen yoktur."),
 
-P("İthal İçecek Çeşitleri","B-52","b-52.jpg","Klasik B-52 shot kokteyli.","","Shot","Kahve likörü, Irish cream, portakal likörü","Alkol içerir."),
-P("İthal İçecek Çeşitleri","Baileys","baileys.jpg","Baileys Irish Cream.","","Kadeh","Irish Cream Likörü","Süt içerir, Alkol içerir."),
+P("İthal İçecek Çeşitleri","B-52","b-52.jpg","Klasik B-52 shot kokteyli.","","Shot","Kahve likörü, Kremalı Kakao Likörü, portakal likörü","Alkol içerir."),
+P("İthal İçecek Çeşitleri","Baileys","baileys.jpg","Kremalı Kakao Likörü.","","Kadeh","Kremalı Kakao Likörü","Süt içerir, Alkol içerir."),
 P("İthal İçecek Çeşitleri","Tek Cin","tek-cin.jpg","Tek ölçü cin.","","Tek","Cin","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Double Cin","double-cin.jpg","Duble ölçü cin.","","Duble","Cin","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Jager","jager.jpg","Jägermeister shot.","","Shot","Bitkisel likör","Alkol içerir."),
