@@ -489,7 +489,7 @@ P("Meşrubat Çeşitleri","Sıkma Portakal","sikma-portakal.jpg","Taze sıkılm�
 P("Meşrubat Çeşitleri","Şalgam","bos.jpg","Geleneksel şalgam suyu.","","300 ml","Şalgam","Bilinen temel alerjen yoktur."),
   
 P("Blend İçecek Çeşitleri","Çilekli Frozen","cilekli-frozen.jpg","Taze çilek ile hazırlanan buzlu frozen.","","1 Bardak","Çilek, Buz","Bilinen temel alerjen yoktur."),
-P("SBlend İçecek Çeşitleri","Mangolu Frozen","mangolu-frozen.jpg","Taze mango ile hazırlanan frozen.","","1 Bardak","Mango, Buz","Bilinen temel alerjen yoktur."),
+P("Blend İçecek Çeşitleri","Mangolu Frozen","mangolu-frozen.jpg","Taze mango ile hazırlanan frozen.","","1 Bardak","Mango, Buz","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Kivili Frozen","kivili-frozen.jpg","Taze kivi ile hazırlanan frozen.","","1 Bardak","Kivi, Buz","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Karadutlu Frozen","karadutlu-frozen.jpg","Karadut aromalı frozen.","","1 Bardak","Karadut, Buz","Bilinen temel alerjen yoktur."),
 P("Blend İçecek Çeşitleri","Şeftalili Frozen","seftalili-frozen.jpg","Şeftali aromalı frozen.","","1 Bardak","Şeftali, Buz","Bilinen temel alerjen yoktur."),
