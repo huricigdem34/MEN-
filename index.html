@@ -50,17 +50,27 @@
 </section>
 
 <div id="detailModal" class="modal hidden">
+
+  <button id="closeModal" class="modal-close">×</button>
+
   <div class="modal-card">
-    <button id="closeModal" class="modal-close">×</button>
     <img id="modalImage" alt="">
+
     <div class="modal-body">
       <small id="modalCategory"></small>
       <h2 id="modalName"></h2>
       <p id="modalDesc" class="modal-desc"></p>
+
       <div class="detail-grid">
-        <div><span>Yaklaşık Kalori</span><b id="modalCal"></b></div>
-        <div><span>Gramaj</span><b id="modalGram"></b></div>
-      </div>
+        <div>
+          <span>Yaklaşık Kalori</span>
+          <b id="modalCal"></b>
+        </div>
+
+        <div>
+          <span>Gramaj</span>
+          <b id="modalGram"></b>
+        </div>
       <section><h3>İçindekiler</h3><p id="modalIngredients"></p></section>
       <section><h3>Alerjenler</h3><p id="modalAllergens"></p></section>
       <div class="chef-note"><span>Şefin Tavsiyesi</span><p id="modalChef"></p></div>
