@@ -45,7 +45,7 @@ body{overflow:hidden}
 .modal{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.82);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;padding:18px}
 .modal-card{width:min(560px,100%);max-height:92dvh;overflow-y:auto;background:#0d110e;border:1px solid rgba(216,181,116,.3);border-radius:26px;position:relative;box-shadow:0 30px 100px #000}
 .modal-card>img{width:100%;height:auto !important;object-fit:contain;border-radius:26px 26px 0 0;}
-.modal-close{position:absolute;right:16px;top:16px;z-index:3;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.68);color:#fff;font-size:28px}
+.modal-close{position:fixed;right:16px;top:16px;z-index:3;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.68);color:#fff;font-size:28px}
 .modal-body{padding:24px}
 .modal-body>small{color:var(--gold);letter-spacing:3px}
 .modal-body h2{font-size:30px;color:#f4dfb0;margin:8px 0}
