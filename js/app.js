@@ -675,6 +675,29 @@ function productCard(p){
 
   </article>`;
 }
+const categoryClose = document.createElement("button");
+categoryClose.className = "category-fixed-close";
+categoryClose.innerHTML = "×";
+categoryClose.setAttribute("aria-label", "Kategoriyi kapat");
+document.body.appendChild(categoryClose);
+
+categoryClose.onclick = () => {
+  const openSection = categoryGrid.querySelector(".accordion-category.open");
+
+  if (openSection) {
+    openSection.classList.remove("open");
+
+    const productsBox = openSection.querySelector(".accordion-products");
+    productsBox.innerHTML = "";
+
+    categoryClose.classList.remove("show");
+
+    openSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+};
 function showCategories(){
  menuTitle.textContent="Menümüz";backBtn.style.visibility="hidden";productGrid.classList.add("hidden");categoryGrid.classList.remove("hidden");
  categoryGrid.innerHTML=categories.map(c=>`<section class="accordion-category" data-cat="${trTitleCase(c.name)}"><button class="accordion-head" type="button"><span>${trTitleCase(c.name)}</span><b>⌄</b></button><div class="accordion-products"></div></section>`).join("");
@@ -685,6 +708,9 @@ function showCategories(){
        x.classList.remove("open");
        x.querySelector(".accordion-products").innerHTML="";
      });
+     if(wasOpen){
+  categoryClose.classList.remove("show");
+}
      if(!wasOpen){
        const list=products.filter(p=>p.cat===section.dataset.cat);
        const box=section.querySelector(".accordion-products");
@@ -693,6 +719,7 @@ function showCategories(){
          card.onclick=()=>openDetail(list[i]);
        });
        section.classList.add("open");
+       categoryClose.classList.add("show");
        setTimeout(()=>section.scrollIntoView({behavior:"smooth",block:"start"}),80);
      }
    };
