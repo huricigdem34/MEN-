@@ -679,6 +679,7 @@ const categoryClose = document.createElement("button");
 categoryClose.className = "category-fixed-close";
 categoryClose.innerHTML = "×";
 categoryClose.setAttribute("aria-label", "Kategoriyi kapat");
+categoryClose.hidden = true;
 document.body.appendChild(categoryClose);
 
 categoryClose.onclick = () => {
@@ -690,7 +691,8 @@ categoryClose.onclick = () => {
     const productsBox = openSection.querySelector(".accordion-products");
     productsBox.innerHTML = "";
 
-    categoryClose.classList.remove("show");
+    categoryClose.hidden = false;
+categoryClose.classList.add("show");
 
     openSection.scrollIntoView({
       behavior: "smooth",
@@ -710,6 +712,7 @@ function showCategories(){
      });
      if(wasOpen){
   categoryClose.classList.remove("show");
+       categoryClose.hidden = true;
 }
      if(!wasOpen){
        const list=products.filter(p=>p.cat===section.dataset.cat);
