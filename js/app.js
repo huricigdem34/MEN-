@@ -510,7 +510,7 @@ P("Sıcak Kahve Çeşitleri","Caffe Latte","caffe-latte.jpg","Espresso ve buhard
 P("Sıcak Kahve Çeşitleri","Cappuccino","cappuccino.jpg","Espresso, süt ve süt köpüğü ile hazırlanır.","","1 Fincan","Espresso, Süt","Süt içerir."),
 P("Sıcak Kahve Çeşitleri","Espresso","espresso.jpg","Yoğun aromalı tek shot espresso.","","1 Fincan","Espresso","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Double Espresso","double-espresso.jpg","Çift shot espresso.","","1 Fincan","Espresso","Bilinen temel alerjen yoktur."),
-P("Sıcak Kahve Çeşitleri","Espresso Macchiato","macchiato.jpg","Süt köpüğü ile hazırlanan espresso.","","1 Fincan","Espresso, Süt","Süt içerir."),
+P("Sıcak Kahve Çeşitleri","Espresso Macchiato","espresso-macchiato.jpg","Süt köpüğü ile hazırlanan espresso.","","1 Fincan","Espresso, Süt","Süt içerir."),
 P("Sıcak Kahve Çeşitleri","Türk Kahvesi","turk-kahvesi.jpg","Geleneksel Türk kahvesi.","","1 Fincan","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Double Türk Kahvesi","double-turk-kahvesi.jpg","Geleneksel Türk kahvesi.","","1 Fincan","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 
