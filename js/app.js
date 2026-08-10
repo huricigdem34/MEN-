@@ -538,7 +538,7 @@ P("Sıcak İçecek Çeşitleri","Hot Chocolate","hot-chocolate.jpg","Sıcak çik
   
 P("Kokteyl Çeşitleri","Long Island Ice Tea","long-island-ice-tea.jpg","Vodka, cin ve kola ile hazırlanan klasik kokteyl.","","Kadeh","Vodka, Bakardi, portakal likörü, Cin, Kola","Alkol içerir."),
 P("Kokteyl Çeşitleri","Sex on the Beach","sex-on-the-beach.jpg","Meyvemsi aromalı ferah kokteyl.","","Kadeh","Vodka, Şeftali Likörü, Portakal suyu, Granedin, Tekila ","Alkol içerir."),
-P("Kokteyl Çeşitleri","Mojito","mojito.jpg","Nane ve lime ile hazırlanan ferahlatıcı kokteyl.","","Kadeh","Bakardi, Esmer şeker, Nane, Limon, Soda","Alkol içerir."),
+P("Kokteyl Çeşitleri","Mojito","mojito.jpg","Nane ve lime ile hazırlanan ferahlatıcı kokteyl.","","Kadeh","Rom, Esmer şeker, Nane, Limon, Soda","Alkol içerir."),
 P("Kokteyl Çeşitleri","Margarita","margarita.jpg","Tekila bazlı klasik margarita.","","Kadeh","Tekila, Portakal likörü, Şeker şurubu, Limon","Alkol içerir."),
 P("Kokteyl Çeşitleri","Apple Martini","apple-martini.jpg","Yeşil elma aromalı martini.","","Kadeh","Vodka, Martini, Soda, Elma Likörü","Alkol içerir."),
 P("Kokteyl Çeşitleri","Beyazıt","beyazit.jpg","Narenciye ile tamamlanan cesur bir harman.","","Kadeh","Votka, Cin, Tekila, Bakardi, Limon Suyu, Portakal Likörü, Soda","Alkol içerir."),
