@@ -722,6 +722,7 @@ function showCategories(){
          card.onclick=()=>openDetail(list[i]);
        });
        section.classList.add("open");
+       categoryClose.hidden = false;
        categoryClose.classList.add("show");
        setTimeout(()=>section.scrollIntoView({behavior:"smooth",block:"start"}),80);
      }
