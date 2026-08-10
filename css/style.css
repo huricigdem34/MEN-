@@ -93,12 +93,23 @@ body{overflow:hidden}
   position:fixed !important;
   top:24px !important;
   right:24px !important;
+  z-index:999999 !important;
 
-  z-index:99999 !important;
+  width:48px !important;
+  height:48px !important;
 
-  width:46px;
-  height:46px;
-  border-radius:50%;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+
+  background:#000 !important;
+  color:#fff !important;
+  border:2px solid #fff !important;
+  border-radius:50% !important;
+
+  font-size:32px !important;
+  line-height:1 !important;
+  cursor:pointer !important;
 }
 .modal-body{padding:24px}
 .modal-body>small{color:var(--gold);letter-spacing:3px}
