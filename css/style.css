@@ -295,7 +295,7 @@ body{overflow:hidden}
 .category-fixed-close{
     position:fixed;
     left:50%;
-    right:auto;
+    right:50%;
     bottom:70px;
     transform:translateX(-50%);
     z-index:1500;
