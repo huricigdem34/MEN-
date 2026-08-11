@@ -329,3 +329,15 @@ body{overflow:hidden}
   pointer-events:auto;
   transform:scale(1);
 }
+/* Giriş dokun yazısı son ayar */
+.touch{
+    font-size:22px !important;
+    color:rgba(194,163,105,.70) !important;
+}
+
+@media(max-width:600px){
+    .touch{
+        font-size:18px !important;
+        color:rgba(194,163,105,.70) !important;
+    }
+}
