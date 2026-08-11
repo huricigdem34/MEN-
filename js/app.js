@@ -250,6 +250,8 @@ const PRICE_MAP = {
 "Kremalı Mantar Çorbası":190,
 "Double Türk Kahvesi":200,
 "Tekmilli Fava":190,
+"Whiskey Sour":190,
+"Mango Tango":190,
 };
 
 function nutritionGrid(p){
@@ -546,6 +548,8 @@ P("Kokteyl Çeşitleri","Dirty Martini","dirty-martini.jpg","Zeytinin cesur doku
 P("Kokteyl Çeşitleri","Espresso Martini","espresso-martini.jpg","Yoğun kahve karakteriyle unutulmaz bir deneyim.","290 kcal","150 ml","Votka, Kahve Likörü, Espresso, Şeker şurubu","Alkol içerir."),
 P("Kokteyl Çeşitleri","Cosmopolitan","cosmopolitan.jpg","Meyvemsi karakteriyle pürüzsüz bir klasik.","150 kcal","150 ml","Votka, Portakal likörü, Limon suyu, Kızılcık suyu","Alkol içerir."),
 P("Kokteyl Çeşitleri","Negroni","negroni.jpg","İkonik İtalyan kokteyl kültürününün simgesi.","185 kcal","90 ml","Cin, Campari, Şeker şurubu, Kırmızı şarap","Alkol içerir."),
+P("Kokteyl Çeşitleri","Whiskey Sour","whiskey-sour.jpg","Yoğun aromalı, ekşi ve dengeli klasik.","210 kcal","150 ml","Cin, Campari, Şeker şurubu, Kırmızı şarap","Alkol içerir."),
+P("Kokteyl Çeşitleri","Mango Tango","mango-tango.jpg","Mango ve turunçgil aromalarıyla tropikal ferahlık.","230 kcal","180 ml","Cin, Campari, Şeker şurubu, Kırmızı şarap","Alkol içerir."),
   
 P("Kurudite Çeşitleri","Havuç","bos.jpg","Taze havuç dilimleri.","","Porsiyon","Havuç","Bilinen temel alerjen yoktur."),
 P("Kurudite Çeşitleri","Kurudite","bos.jpg","Taze havuç ve salatalık dilimlerinden oluşan kurudite tabağı.","","Porsiyon","Havuç, Salatalık","Bilinen temel alerjen yoktur."),
