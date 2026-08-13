@@ -323,7 +323,15 @@ body{overflow:hidden}
   transform:scale(.85);
   transition:.2s ease;
 }
-
+.category-fixed-close{
+    position:fixed !important;
+    top:24px !important;
+    right:24px !important;
+    left:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    z-index:9999 !important;
+}
 .category-fixed-close.show{
   opacity:1;
   pointer-events:auto;
