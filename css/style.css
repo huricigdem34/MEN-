@@ -325,7 +325,7 @@ body{overflow:hidden}
 }
 .category-fixed-close{
     position:fixed !important;
-    top:24px !important;
+    top:30px !important;
     right:24px !important;
     left:auto !important;
     bottom:auto !important;
