@@ -521,6 +521,7 @@ P("Sıcak Kahve Çeşitleri","Türk Kahvesi","turk-kahvesi.jpg","Geleneksel Tür
 P("Sıcak Kahve Çeşitleri","Double Türk Kahvesi","double-turk-kahvesi.jpg","Geleneksel Türk kahvesi.","10 kcal","140 ml","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 
 P("Şurup Çeşitleri","Çilek","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çilek şurubu","Bilinen temel alerjen yoktur."),
+P("Şurup Çeşitleri","Şeker","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Şeker şurubu","Bilinen temel alerjen yoktur."),
 P("Şurup Çeşitleri","Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çikolata şurubu","Bilinen temel alerjen yoktur."),
 P("Şurup Çeşitleri","Karamel","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","1 Fincan","Karamel şurubu","Bilinen temel alerjen yoktur."),
 P("Şurup Çeşitleri","Beyaz Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Beyaz çikolata şurubu","Bilinen temel alerjen yoktur."),
