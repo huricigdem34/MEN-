@@ -253,6 +253,8 @@ const PRICE_MAP = {
 "Espresso Martini":550,
 "Cosmopolitan":550,
 "Negroni":580,
+"Tekila Shot":200,
+
 };
 
 function nutritionGrid(p){
@@ -564,7 +566,7 @@ P("İthal İçecek Çeşitleri","Tek Cin","bos.jpg","Tek ölçü cin.","","Tek",
 P("İthal İçecek Çeşitleri","Double Cin","bos.jpg","Duble ölçü cin.","","Duble","Cin","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Jager","bos.jpg","Jägermeister shot.","","Shot","Bitkisel likör","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Malibu","bos.jpg","Hindistan cevizi aromalı rom likörü.","","Kadeh","Rom Likörü","Alkol içerir."),
-P("İthal İçecek Çeşitleri","Tekila","bos.jpg","Tekila shot.","","Shot","Tekila Shot","Alkol içerir."),
+P("İthal İçecek Çeşitleri","Tekila Shot","bos.jpg","Tekila shot.","","Shot","Tekila Shot","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Olmeca 35 CL","bos.jpg","35 CL Olmeca Tekila.","","35 CL","Tekila","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Olmeca 50 CL","bos.jpg","50 CL Olmeca Tekila.","","50 CL","Tekila","Alkol içerir."),
 P("İthal İçecek Çeşitleri","Olmeca 70 CL","bos.jpg","70 CL Olmeca Tekila.","","70 CL","Tekila","Alkol içerir."),
