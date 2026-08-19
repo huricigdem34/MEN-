@@ -407,7 +407,7 @@ P("Omlet Çeşitleri","Sade Omlet","sade-omlet.jpg","Tereyağında klasik omlet.
 P("Omlet Çeşitleri","Kaşarlı Omlet","kasarli-omlet.jpg","Rendelenmiş kaşar peynirli omlet.","420 kcal","200 g","Yumurta, kaşar peyniri, tereyağı, tuz, karabiber.","Yumurta, süt ve süt ürünleri."),
 P("Omlet Çeşitleri","Sucuklu Omlet","sucuklu-omlet.jpg","Kasap sucuklu omlet.","480 kcal","210 g","Yumurta, sucuk, tereyağı, tuz, karabiber.","Yumurta, süt ve süt ürünleri."),
 P("Omlet Çeşitleri","Sahanda Yumurta","sahanda-yumurta.jpg","Tereyağında sahanda iki yumurta.","220 kcal","110 g","Yumurta, tereyağı, tuz, isteğe bağlı karabiber.","Yumurta, süt ve süt ürünleri."),
-P("Omlet Çeşitleri","Sahanda Kasap Sucuklu Yumurta","sahanda-sucuklu-yumurta.jpg","Tereyağında  kasap sucuğu ve sahanda yumurta.","420 kcal","160 g","Yumurta, kasap sucuğu, tereyağı, isteğe bağlı tuz ve karabiber.","Yumurta, süt ve süt ürünleri."),
+P("Omlet Çeşitleri","Sahanda Sucuklu Yumurta","sahanda-sucuklu-yumurta.jpg","Tereyağında  kasap sucuğu ve sahanda yumurta.","420 kcal","160 g","Yumurta, kasap sucuğu, tereyağı, isteğe bağlı tuz ve karabiber.","Yumurta, süt ve süt ürünleri."),
 
 P("Krep Çeşitleri","Tavuklu Krep","tavuklu-krep.jpg","Kremalı tavuk harcı ve kaşarla fırınlanan krep.","760 kcal","300 g","Un, yumurta, süt, sıvı yağ, tavuk göğsü, krema, kaşar, tuz, karabiber, kekik.","Gluten, yumurta, süt ve süt ürünleri."),
 P("Krep Çeşitleri","Mantarlı Krep","mantarli-krep.jpg","Kremalı mantar harcı ve kaşarla fırınlanan krep.","680 kcal","390 g","Un, yumurta, süt, sıvı yağ, mantar, sarımsak, tereyağı, krema, kaşar, tuz, karabiber, kekik, maydanoz.","Gluten, yumurta, süt ve süt ürünleri."),
