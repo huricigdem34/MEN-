@@ -195,7 +195,7 @@ const PRICE_MAP = {
 "Hot Chocolate":130,
 "Espresso Macchiato":190,
 "Türk Kahvesi":120,
-"Ice Americano":230,
+"Ice Americano":200,
 "Ice Caramel Macchiato":230,
 "Ice Chocolate Mocha":230,
 "Ice Latte":230,
