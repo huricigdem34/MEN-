@@ -81,7 +81,7 @@ const PRICE_MAP = {
   "Yoğurt":160,
   "Barbunya Pilaki":180,
   "Kuru Cacık":180,
-  "Tavuk Salatası":360,
+  "Tavuk Salata":360,
   "Greek Salata":340,
   "Kaşarlı Köfte":750,
   "Kuzu Pirzola":850,
@@ -418,7 +418,7 @@ P("Krep Çeşitleri","Tavuklu Mantarlı Krep","tavuklu-mantarli-krep.jpg","Tavuk
 P("Menemen Çeşitleri","Sade Menemen","sade-menemen.jpg","Domates ve sivri biberle klasik menemen.","330 kcal","270 g","Yumurta, domates, yeşil sivri biber, tereyağı, zeytinyağı, tuz, isteğe bağlı karabiber ve pul biber.","Yumurta, süt ve süt ürünleri."),
 P("Menemen Çeşitleri","Kaşarlı Menemen","kasarli-menemen.jpg","Kaşar peyniriyle zenginleştirilmiş menemen.","470 kcal","310 g","Yumurta, domates, yeşil sivri biber, kaşar, tereyağı, zeytinyağı, tuz, isteğe bağlı karabiber ve pul biber.","Yumurta, süt ve süt ürünleri."),
 
-P("Salata Çeşitleri","Sezar Salatası","sezar-salatasi.jpg","Izgara tavuk, parmesan ve krutonlu Sezar salatası.","520 kcal","325 g","Izgara tavuk, marul, kruton, parmesan; Sezar sos: mayonez, hardal, limon suyu, sarımsak, zeytinyağı, Worcestershire sos, tuz, karabiber.","Gluten, süt ve süt ürünleri, yumurta, hardal; Worcestershire içeriğine göre balık içerebilir."),
+P("Salata Çeşitleri","Sezar Salata","sezar-salatasi.jpg","Izgara tavuk, parmesan ve krutonlu Sezar salatası.","520 kcal","325 g","Izgara tavuk, marul, kruton, parmesan; Sezar sos: mayonez, hardal, limon suyu, sarımsak, zeytinyağı, Worcestershire sos, tuz, karabiber.","Gluten, süt ve süt ürünleri, yumurta, hardal; Worcestershire içeriğine göre balık içerebilir."),
 P("Salata Çeşitleri","Çoban Salata","coban-salata.jpg","Günlük doğranmış taze sebzeler.","180 kcal","210 g","Domates, salatalık, yeşil sivri biber, soğan, maydanoz, zeytinyağı, limon suyu, tuz, isteğe bağlı sumak."),
 P("Salata Çeşitleri","Kaşık Salata","kasik-salata.jpg","İnce doğranmış sebzeler ve nar ekşisi.","210 kcal","230 g","Domates, salatalık, yeşil sivri biber, soğan, roka, nar ekşisi, zeytinyağı, limon suyu, tuz, isteğe bağlı sumak."),
 P("Salata Çeşitleri","Yeşil Salata","yesil-salata.jpg","Taze yeşilliklerden hafif salata.","150 kcal","175 g","Göbek marul, kıvırcık, roka, maydanoz, dereotu, salatalık, zeytinyağı, limon suyu, tuz."),
