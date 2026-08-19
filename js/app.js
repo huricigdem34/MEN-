@@ -62,7 +62,7 @@ const PRICE_MAP = {
   "Çıtır Tavuk Sepeti":420,
   "Bira Tabağı":420,
   "Kaşar Pane":300,
-  "Fava":180,
+  "Fava":170,
   "Deniz Börülcesi":180,
   "Haydari":170,
   "Atom":180,
