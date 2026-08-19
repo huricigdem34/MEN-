@@ -238,6 +238,7 @@ const PRICE_MAP = {
 "Sıkma Portakal":160,
 "Şalgam":90,
 "Çilek":20,
+"Şeker":20,
 "Çikolata":20,
 "Karamel":20,
 "Beyaz Çikolata":20,
