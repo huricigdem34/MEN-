@@ -187,7 +187,8 @@ const PRICE_MAP = {
 "Kuşburnu":130,
 "Yeşil Çay":130,
 "Americano":160,
-"Caffe Latte":190,
+"Caffe Latte":200,
+"Aromalı Caffe Latte":210,
 "Cappuccino":200,
 "Chocolate Mocha Latte":220,
 "Espresso":150,
@@ -198,7 +199,8 @@ const PRICE_MAP = {
 "Ice Americano":200,
 "Ice Caramel Macchiato":230,
 "Ice Chocolate Mocha":230,
-"Ice Latte":230,
+"Ice Latte":200,
+"Aromalı Ice Latte":210,
 "Çilekli Frozen":200,
 "Mangolu Frozen":200,
 "Kivili Frozen":200,
@@ -511,9 +513,12 @@ P("Blend İçecek Çeşitleri","Şeftalili Smoothie","seftalili-smoothie.jpg","�
 
 P("Soğuk Kahve Çeşitleri","Ice Americano","ice-americano.jpg","Buz ve espresso ile hazırlanan ferah Americano.","10 kcal","350 ml","Espresso, Su, Buz","Bilinen temel alerjen yoktur."),
 P("Soğuk Kahve Çeşitleri","Ice Latte","ice-latte.jpg","Buzlu latte.","130 kcal","350 ml","Espresso, Süt, Buz","Süt içerir."),
+P("Soğuk Kahve Çeşitleri","Aromalı Ice Latte","ice-latte.jpg","Buzlu latte.","130 kcal","350 ml","Espresso, Süt, Buz","Süt içerir."),
+
 
 P("Sıcak Kahve Çeşitleri","Americano","americano.jpg","Espresso bazlı sıcak kahve.","9 kcal","200 ml","Espresso, Sıcak Su","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Caffe Latte","caffe-latte.jpg","Espresso ve buharda ısıtılmış süt ile hazırlanır.","110 kcal","200 ml","Espresso, Süt","Süt içerir."),
+P("Sıcak Kahve Çeşitleri","Aromalı Caffe Latte","caffe-latte.jpg","Espresso ve buharda ısıtılmış süt ve şurup ile hazırlanır. Şurup çeşitleri için garsonunuza danışınız.","110 kcal","200 ml","Espresso, Süt","Süt içerir."),
 P("Sıcak Kahve Çeşitleri","Cappuccino","cappuccino.jpg","Espresso, süt ve süt köpüğü ile hazırlanır.","90 kcal","200 ml","Espresso, Süt","Süt içerir."),
 P("Sıcak Kahve Çeşitleri","Espresso","espresso.jpg","Yoğun aromalı tek shot espresso.","5 kcal","30 ml","Espresso","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Double Espresso","double-espresso.jpg","Çift shot espresso.","10 kcal","60 ml","Espresso","Bilinen temel alerjen yoktur."),
@@ -521,14 +526,6 @@ P("Sıcak Kahve Çeşitleri","Espresso Macchiato","espresso-macchiato.jpg","Süt
 P("Sıcak Kahve Çeşitleri","Türk Kahvesi","turk-kahvesi.jpg","Geleneksel Türk kahvesi.","5 kcal","70 ml","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 P("Sıcak Kahve Çeşitleri","Double Türk Kahvesi","double-turk-kahvesi.jpg","Geleneksel Türk kahvesi.","10 kcal","140 ml","Türk Kahvesi","Bilinen temel alerjen yoktur."),
 
-P("Şurup Çeşitleri","Çilek","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çilek şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Şeker","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Şeker şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Çikolata şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Karamel","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","1 Fincan","Karamel şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Beyaz Çikolata","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Beyaz çikolata şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Fındık","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Fındık şurubu","Bilinen temel alerjen yoktur."),
-P("Şurup Çeşitleri","Vanilya","bos.jpg","Sıcak ve soğuk kahvelerinize zengin bir tat katar.","","Vanilya şurubu","Bilinen temel alerjen yoktur."),
-  
 P("Bitki Çayı Çeşitleri","Adaçayı","bos.jpg","Doğal bitki özünü taşıyan, geleneksel demleme.","2 kcal","300 ml","Adaçayı","Bilinen temel alerjen yoktur."),
 P("Bitki Çayı Çeşitleri","Hibiskus","bos.jpg","Meyvemsi aromasıyla dengeli bir demleme.","3 kcal","300 ml","Hibiskus","Bilinen temel alerjen yoktur."),
 P("Bitki Çayı Çeşitleri","Ihlamur","bos.jpg","Özenle seçilen bitkiyle, geleneksel demleme.","2 kcal","300 ml","Ihlamur","Bilinen temel alerjen yoktur."),
