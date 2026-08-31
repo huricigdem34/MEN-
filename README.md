@@ -92,3 +92,4 @@ npm run dev
 - **Admin — Hızlı istatistik şeridi:** Toplam Ürün / Satışta / Gizli / Popüler sayıları tek bakışta.
 - **Public menü — Arama çubuğu:** 231 ürün arasında kategori açmadan direkt isimle arama.
 - **Bug fix:** İşlemler menüsü (⋮), tablo yatay kaydırıldığında kendini anında kapatıyordu (tarayıcının otomatik "scroll into view" davranışı yüzünden) — kök nedenini bulup düzelttim.
+
