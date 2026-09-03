@@ -308,13 +308,13 @@ const BULB_POSITIONS_DESKTOP = [
   { left: '93%', rope: '15vh' },
 ]
 const BULB_POSITIONS_MOBILE = [
-  { left: '1%', rope: '14vh' },
-  { left: '15%', rope: '8vh' },
-  { left: '30%', rope: '17vh' },
-  { left: '46%', rope: '9vh' },
+  { left: '10%', rope: '14vh' },
+  { left: '24%', rope: '8vh' },
+  { left: '38%', rope: '17vh' },
+  { left: '50%', rope: '9vh' },
   { left: '62%', rope: '15vh' },
-  { left: '78%', rope: '7vh' },
-  { left: '92%', rope: '16vh' },
+  { left: '76%', rope: '7vh' },
+  { left: '90%', rope: '16vh' },
 ]
 const ROPE_OPACITY_BY_LEVEL = [0.07, 0.32, 0.44, 0.55, 0.66, 0.76, 0.86, 0.94]
 
@@ -390,7 +390,11 @@ function IntroScreen({ onEnter, t }) {
       {/* Hanging bulbs */}
       <div className="absolute inset-0 z-[8] pointer-events-none overflow-hidden">
         {positions.map((pos, i) => (
-          <div key={i} className="absolute top-0 flex flex-col items-center" style={{ left: pos.left }}>
+          <div
+            key={i}
+            className="absolute top-0 flex flex-col items-center"
+            style={{ left: pos.left, width: isMobile ? '92px' : '175px', transform: 'translateX(-50%)' }}
+          >
             <div
               className="transition-opacity duration-700"
               style={{
@@ -398,9 +402,11 @@ function IntroScreen({ onEnter, t }) {
                 height: pos.rope,
                 opacity: i < bulbLevel ? ropeOpacity : 0.07,
                 filter: i < bulbLevel ? 'brightness(1) saturate(1)' : 'brightness(.42) saturate(.55)',
-                background: 'repeating-linear-gradient(118deg, #352317 0 2px, #765333 2px 3px, #49301e 3px 5px)',
+                background: 'linear-gradient(90deg, #1c130c 0%, #6b4a2e 38%, #8a6238 50%, #4a3119 65%, #1c130c 100%)',
                 borderRadius: '2px',
-                boxShadow: 'inset 1px 0 rgba(224,181,111,.20), inset -1px 0 rgba(13,8,5,.58), 0 1px 2px rgba(0,0,0,.42)',
+                maskImage: 'linear-gradient(to bottom, transparent 0, black 24px)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0, black 24px)',
+                boxShadow: '0 1px 2px rgba(0,0,0,.42)',
               }}
             />
             <img
@@ -408,8 +414,8 @@ function IntroScreen({ onEnter, t }) {
               alt=""
               className="edison-bulb-img"
               style={{
-                width: isMobile ? '122px' : '175px',
-                height: isMobile ? '340px' : '430px',
+                width: isMobile ? '92px' : '175px',
+                height: isMobile ? '256px' : '430px',
                 objectFit: 'contain',
                 objectPosition: 'center top',
                 marginTop: '-2px',
@@ -696,7 +702,13 @@ function ProductModal({ product, onClose, t, lang, productField }) {
         </button>
 
         {product.image_url ? (
-          <img src={product.image_url} alt={productField(product, 'name')} className="w-full h-[210px] sm:h-[260px] object-cover rounded-t-[26px]" />
+          <div className="w-full max-h-[45vh] rounded-t-[26px] overflow-hidden bg-[#0c0f0d] flex items-center justify-center">
+            <img
+              src={product.image_url}
+              alt={productField(product, 'name')}
+              className="w-full max-h-[45vh] object-contain"
+            />
+          </div>
         ) : (
           <div className="w-full h-[120px] rounded-t-[26px] bg-[#111512]" />
         )}
