@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo, useRef } from 'react'
-import { ChevronDown, X, Star, ImageOff, Search, Wifi, Phone, Copy, Check, Globe } from 'lucide-react'
+import { ChevronDown, X, Star, ImageOff, Search, Wifi, Phone, Copy, Check, Globe, Instagram } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { AllergenIcon, IngredientIcon } from '../components/MenuIcons'
 import { trTitleCase } from '../lib/menuIcons'
@@ -13,7 +13,7 @@ const UI = {
     chefNote: 'Şefin Notu', approxCalories: 'Yaklaşık Kalori', grammage: 'Gramaj', featured: 'Popüler',
     tapToEnter: ['MENÜYE GİRMEK İÇİN', 'DOKUNUN'], welcome: ['Lezzetli Bir Deneyime', 'Hazır Mısınız?'],
     wifiPassword: 'WiFi Şifresi', copy: 'Kopyala', copied: 'Kopyalandı', reservation: 'Rezervasyon & İletişim',
-    callUs: 'Bizi Arayın', itemCount: (n) => `${n} ürün`,
+    callUs: 'Bizi Arayın', itemCount: (n) => `${n} ürün`, close: 'Kapat',
   },
   en: {
     menu: 'Our Menu', search: 'Search the menu...', resultsFound: (n) => `${n} results found`,
@@ -23,7 +23,7 @@ const UI = {
     chefNote: "Chef's Note", approxCalories: 'Approx. Calories', grammage: 'Portion', featured: 'Popular',
     tapToEnter: ['TAP TO ENTER', 'THE MENU'], welcome: ['Ready For A', 'Delicious Experience?'],
     wifiPassword: 'WiFi Password', copy: 'Copy', copied: 'Copied', reservation: 'Reservations & Contact',
-    callUs: 'Call Us', itemCount: (n) => `${n} ${n === 1 ? 'item' : 'items'}`,
+    callUs: 'Call Us', itemCount: (n) => `${n} ${n === 1 ? 'item' : 'items'}`, close: 'Close',
   },
 }
 
@@ -204,31 +204,45 @@ export default function PublicMenu() {
         </header>
 
         <main className="max-w-3xl mx-auto px-3 sm:px-5 pb-10">
-          {(hasWifi || hasReservation) && (
-            <Reveal className="mb-5">
-              <section className="rounded-2xl border border-[#d8b574]/20 bg-white/[0.02] p-5 sm:p-6 font-sans text-center">
-                <h2 className="text-[#f3d99c] text-[17px] mb-4" style={{ fontFamily: 'Georgia, serif' }}>{t.reservation}</h2>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                  {hasWifi && (
-                    <button
-                      onClick={() => setWifiOpen(true)}
-                      className="flex items-center gap-2 border border-[#d8b574]/30 text-[#d8c9a9] text-sm px-4 py-2.5 rounded-full hover:bg-[#d8b574]/10 transition-colors"
-                    >
-                      <Wifi className="w-4 h-4 text-[#d8b574]" strokeWidth={1.5} /> {t.wifiPassword}
-                    </button>
-                  )}
-                  {hasReservation && (
-                    <a
-                      href={`tel:${settings.reservation_phone}`}
-                      className="flex items-center gap-2 bg-amber-500 text-neutral-950 font-medium text-sm px-5 py-2.5 rounded-full hover:bg-amber-400 transition-colors"
-                    >
-                      <Phone className="w-4 h-4" strokeWidth={1.5} /> {t.callUs}
-                    </a>
-                  )}
-                </div>
-              </section>
-            </Reveal>
-          )}
+          <Reveal className="mb-5">
+            <section className="rounded-2xl border border-[#d8b574]/20 bg-white/[0.02] p-5 sm:p-6 font-sans text-center">
+              <h2 className="text-[#f3d99c] text-[17px] mb-4" style={{ fontFamily: 'Georgia, serif' }}>{t.reservation}</h2>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                {hasWifi && (
+                  <button
+                    onClick={() => setWifiOpen(true)}
+                    className="flex items-center gap-2 border border-[#d8b574]/30 text-[#d8c9a9] text-sm px-4 py-2.5 rounded-full hover:bg-[#d8b574]/10 transition-colors"
+                  >
+                    <Wifi className="w-4 h-4 text-[#d8b574]" strokeWidth={1.5} /> {t.wifiPassword}
+                  </button>
+                )}
+                {hasReservation && (
+                  <a
+                    href={`tel:${settings.reservation_phone}`}
+                    className="flex items-center gap-2 bg-amber-500 text-neutral-950 font-medium text-sm px-5 py-2.5 rounded-full hover:bg-amber-400 transition-colors"
+                  >
+                    <Phone className="w-4 h-4" strokeWidth={1.5} /> {t.callUs}
+                  </a>
+                )}
+                <a
+                  href="https://www.instagram.com/thelobbyrest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="group flex items-center justify-center w-11 h-11 rounded-full border transition-all duration-200"
+                  style={{ borderColor: 'rgba(212,175,55,.45)', color: '#D4AF37', background: 'transparent' }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(212,175,55,.12)'; e.currentTarget.style.borderColor = '#D4AF37' }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'rgba(212,175,55,.45)' }}
+                >
+                  <Instagram
+                    className="w-5 h-5 transition-transform duration-200 group-hover:scale-110"
+                    strokeWidth={1.6}
+                    style={{ filter: 'drop-shadow(0 0 4px rgba(212,175,55,.35))' }}
+                  />
+                </a>
+              </div>
+            </section>
+          </Reveal>
 
           {loading ? (
             <div className="flex justify-center py-24">
@@ -284,39 +298,157 @@ export default function PublicMenu() {
   )
 }
 
+const BULB_POSITIONS_DESKTOP = [
+  { left: '4%', rope: '13vh' },
+  { left: '20%', rope: '7vh' },
+  { left: '35%', rope: '16vh' },
+  { left: '50%', rope: '8vh' },
+  { left: '65%', rope: '14vh' },
+  { left: '80%', rope: '6vh' },
+  { left: '93%', rope: '15vh' },
+]
+const BULB_POSITIONS_MOBILE = [
+  { left: '1%', rope: '14vh' },
+  { left: '15%', rope: '8vh' },
+  { left: '30%', rope: '17vh' },
+  { left: '46%', rope: '9vh' },
+  { left: '62%', rope: '15vh' },
+  { left: '78%', rope: '7vh' },
+  { left: '92%', rope: '16vh' },
+]
+const ROPE_OPACITY_BY_LEVEL = [0.07, 0.32, 0.44, 0.55, 0.66, 0.76, 0.86, 0.94]
+
 function IntroScreen({ onEnter, t }) {
+  const [bulbLevel, setBulbLevel] = useState(0)
+  const [clicked, setClicked] = useState(false)
+  const [fadingOut, setFadingOut] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const timers = useRef([])
+
+  useEffect(() => {
+    setIsMobile(window.matchMedia('(max-width: 700px)').matches)
+    return () => timers.current.forEach(clearTimeout)
+  }, [])
+
+  function handleClick() {
+    if (clicked) return
+    setClicked(true)
+
+    for (let i = 0; i < 7; i++) {
+      timers.current.push(setTimeout(() => setBulbLevel(i + 1), i * 320))
+    }
+    timers.current.push(setTimeout(() => setFadingOut(true), 3000))
+    timers.current.push(setTimeout(() => onEnter(), 4100))
+  }
+
+  const positions = isMobile ? BULB_POSITIONS_MOBILE : BULB_POSITIONS_DESKTOP
+  const darkness = Math.max(0.16, 0.68 - bulbLevel * 0.075)
+  const ropeOpacity = ROPE_OPACITY_BY_LEVEL[bulbLevel]
+
   return (
     <div
-      onClick={onEnter}
-      className="fixed inset-0 z-[999] flex items-center justify-center cursor-pointer overflow-hidden animate-in fade-in duration-700"
-      style={{ background: 'radial-gradient(circle at 50% 35%, #1a1710 0%, #0a0906 45%, #050403 100%)' }}
+      onClick={handleClick}
+      style={{ transitionDuration: '1100ms' }}
+      className={`fixed inset-0 z-[999] flex items-center justify-center cursor-pointer overflow-hidden transition-opacity ${fadingOut ? 'opacity-0' : 'opacity-100'}`}
     >
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(circle at 50% 30%, rgba(216,181,116,.12), transparent 55%)' }} />
-      <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ background: 'rgba(216,181,116,.05)', animationDuration: '4s' }} />
-      <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ background: 'rgba(216,181,116,.05)', animationDuration: '4s', animationDelay: '1s' }} />
+      <img src="/assets/intro/background.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
 
-      <div className="relative z-10 text-center px-6 animate-in fade-in zoom-in-95 duration-1000">
-        <img
-          src="/logo.png"
-          alt="The Lobby"
-          className="w-28 h-28 sm:w-36 sm:h-36 object-contain mx-auto mb-9 drop-shadow-[0_8px_28px_rgba(0,0,0,.65)]"
-          style={{ animation: 'lobby-breathe 3.5s ease-in-out infinite' }}
-        />
-        <div className="w-10 h-px mx-auto mb-6" style={{ background: 'linear-gradient(90deg, transparent, rgba(216,181,116,.5), transparent)' }} />
+      {/* Darkness overlay — lifts as bulbs light up */}
+      <div className="absolute inset-0 transition-colors duration-700" style={{ backgroundColor: `rgba(0,0,0,${darkness})` }} />
+
+      {/* Warm light pooling from each bulb */}
+      <div
+        className="absolute inset-x-0 top-0 h-[58vh] transition-opacity"
+        style={{
+          opacity: clicked ? 1 : 0,
+          transitionDuration: '1050ms',
+          filter: 'blur(10px)',
+          background: [
+            'radial-gradient(ellipse 8% 70% at 7% 0%, rgba(255,188,86,.24) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 72% at 21% 0%, rgba(255,188,86,.24) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 74% at 36% 0%, rgba(255,188,86,.25) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 76% at 50% 0%, rgba(255,188,86,.26) 0%, rgba(255,166,60,.11) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 74% at 64% 0%, rgba(255,188,86,.25) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 72% at 79% 0%, rgba(255,188,86,.24) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+            'radial-gradient(ellipse 8% 70% at 93% 0%, rgba(255,188,86,.24) 0%, rgba(255,166,60,.10) 43%, transparent 76%)',
+          ].join(','),
+        }}
+      />
+
+      {/* Fog */}
+      <div className="absolute z-[4]" style={{
+        width: '180%', height: '420px', left: '-40%', bottom: '-160px', opacity: 0.18, filter: 'blur(55px)',
+        background: 'radial-gradient(circle, rgba(255,255,255,.12), transparent 70%)',
+        animation: 'lobby-fog-move 18s linear infinite',
+      }} />
+      <div className="absolute z-[4]" style={{
+        width: '180%', height: '420px', left: '-40%', bottom: '-240px', opacity: 0.1, transform: 'scale(1.3)',
+        background: 'radial-gradient(circle, rgba(255,255,255,.12), transparent 70%)',
+        animation: 'lobby-fog-move2 25s linear infinite',
+      }} />
+
+      {/* Hanging bulbs */}
+      <div className="absolute inset-0 z-[8] pointer-events-none overflow-hidden">
+        {positions.map((pos, i) => (
+          <div key={i} className="absolute top-0 flex flex-col items-center" style={{ left: pos.left }}>
+            <div
+              className="transition-opacity duration-700"
+              style={{
+                width: isMobile ? '2.5px' : '3px',
+                height: pos.rope,
+                opacity: i < bulbLevel ? ropeOpacity : 0.07,
+                filter: i < bulbLevel ? 'brightness(1) saturate(1)' : 'brightness(.42) saturate(.55)',
+                background: 'repeating-linear-gradient(118deg, #352317 0 2px, #765333 2px 3px, #49301e 3px 5px)',
+                borderRadius: '2px',
+                boxShadow: 'inset 1px 0 rgba(224,181,111,.20), inset -1px 0 rgba(13,8,5,.58), 0 1px 2px rgba(0,0,0,.42)',
+              }}
+            />
+            <img
+              src="/assets/intro/edison-bulb.png"
+              alt=""
+              className="edison-bulb-img"
+              style={{
+                width: isMobile ? '122px' : '175px',
+                height: isMobile ? '340px' : '430px',
+                objectFit: 'contain',
+                objectPosition: 'center top',
+                marginTop: '-2px',
+                opacity: i < bulbLevel ? 1 : 0.64,
+                filter: i < bulbLevel
+                  ? 'brightness(.92) saturate(1.12) contrast(1.05) drop-shadow(0 4px 5px rgba(255,187,92,.16)) drop-shadow(0 11px 15px rgba(255,145,34,.18)) drop-shadow(0 24px 34px rgba(255,116,18,.12))'
+                  : 'brightness(.055) saturate(.2) contrast(1.08)',
+                transition: 'filter 1.15s cubic-bezier(.2,.7,.2,1), opacity 1s ease',
+                animation: i < bulbLevel ? 'lobby-filament-breath 4s ease-in-out infinite' : 'none',
+              }}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div className="absolute inset-x-0 bottom-[12%] z-10 text-center px-6">
         <p
           className="text-[16px] sm:text-[20px] tracking-[3.5px] leading-loose font-sans"
-          style={{ color: 'rgba(194,163,105,.85)', textShadow: '0 1px 0 rgba(255,224,163,.08), 0 -1px 1px rgba(0,0,0,.78)' }}
+          style={{
+            color: 'rgba(194,163,105,.85)',
+            textShadow: '0 1px 0 rgba(255,224,163,.08), 0 -1px 1px rgba(0,0,0,.78)',
+            animation: 'lobby-touch-glow 2.4s ease-in-out infinite',
+          }}
         >
-          <span className="inline-block animate-pulse" style={{ animationDuration: '2.2s' }}>{t.tapToEnter[0]}</span>
-          <br />
-          <span className="inline-block animate-pulse" style={{ animationDuration: '2.2s', animationDelay: '0.4s' }}>{t.tapToEnter[1]}</span>
+          {t.tapToEnter[0]}<br />{t.tapToEnter[1]}
         </p>
       </div>
 
       <style>{`
-        @keyframes lobby-breathe {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.035); }
+        @keyframes lobby-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+        @keyframes lobby-fog-move { 0%, 100% { transform: translateX(-8%); } 50% { transform: translateX(8%); } }
+        @keyframes lobby-fog-move2 { 0% { transform: translateX(10%) scale(1.3); } 50% { transform: translateX(-10%) scale(1.3); } 100% { transform: translateX(10%) scale(1.3); } }
+        @keyframes lobby-filament-breath {
+          0%, 100% { filter: brightness(1.01) saturate(1.14) contrast(1.06) drop-shadow(0 5px 5px rgba(255,187,92,.21)) drop-shadow(0 13px 16px rgba(255,145,34,.24)) drop-shadow(0 27px 38px rgba(255,116,18,.17)); }
+          50% { filter: brightness(1.07) saturate(1.2) contrast(1.07) drop-shadow(0 5px 6px rgba(255,197,108,.25)) drop-shadow(0 14px 18px rgba(255,151,40,.29)) drop-shadow(0 29px 42px rgba(255,119,19,.20)); }
+        }
+        @keyframes lobby-touch-glow {
+          0%, 100% { opacity: .42; letter-spacing: 3px; text-shadow: 0 1px 0 rgba(255,224,163,.08), 0 -1px 1px rgba(0,0,0,.78); }
+          50% { opacity: 1; letter-spacing: 6px; text-shadow: 0 0 12px rgba(255,220,120,.7), 0 0 25px rgba(255,200,90,.5); }
         }
       `}</style>
     </div>
@@ -443,11 +575,13 @@ function CategoryAccordion({ category, label, isOpen, onToggle, onSelectProduct,
         overflowAnchor: 'none',
       }}
     >
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         onClick={onToggle}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onToggle() }}
         className="w-full min-h-[72px] px-4 sm:px-5 py-3 flex items-center justify-between gap-3
-                   text-left active:bg-white/5 transition-colors"
+                   text-left active:bg-white/5 transition-colors cursor-pointer"
       >
         <span className="min-w-0">
           <span className="block text-[clamp(16px,4.2vw,21px)] text-[#eee4d2] leading-snug truncate">
@@ -455,11 +589,23 @@ function CategoryAccordion({ category, label, isOpen, onToggle, onSelectProduct,
           </span>
           <span className="block text-[11px] text-[#999] mt-0.5 font-sans">{t.itemCount(category.items.length)}</span>
         </span>
-        <ChevronDown
-          className={`w-5 h-5 text-[#d8b574] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-          strokeWidth={1.75}
-        />
-      </button>
+        <span className="flex items-center gap-1 shrink-0">
+          {isOpen && (
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); onToggle() }}
+              aria-label={t.close}
+              className="p-1.5 rounded-full text-[#d8b574]/70 hover:text-[#d8b574] hover:bg-white/5 transition-colors"
+            >
+              <X className="w-4 h-4" strokeWidth={2} />
+            </button>
+          )}
+          <ChevronDown
+            className={`w-5 h-5 text-[#d8b574] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+            strokeWidth={1.75}
+          />
+        </span>
+      </div>
 
       <div
         className="grid transition-[grid-template-rows] duration-500 ease-out"

@@ -78,6 +78,17 @@ npm run dev
 - `src/App.jsx` — routing (`/` → public menü, `/sistem/*` → yönetici paneli, eski `/admin/*` otomatik yönlenir)
 - `public/logo.png` — orijinal PDF'ten çıkarılan şeffaf logo
 
+## Bu turda eklenenler
+- **Sekme başlığı** "Lobbygarden Menu" oldu.
+- **Gerçek ampul/halat/sis intro animasyonu** geri entegre edildi (orijinal `intro.css`/`intro.js`/`animations.css` mantığı React'e taşındı) — 7 ampul sırayla yanıyor, halatlardan sarkıyor, arka plan (`public/assets/intro/background.jpg`, orijinal görselden sıkıştırıldı) aşamalı aydınlanıyor.
+- **Instagram butonu** Rezervasyon & İletişim bölümünde, altın renkte, `instagram.com/thelobbyrest`'e gidiyor.
+- **Kategori kartlarında X (kapatma) butonu** eklendi.
+- **Intro yazısının opaklık animasyonu** orijinal `touchGlow` keyframe'iyle birebir eşleşecek şekilde güncellendi.
+- Kategori akordeonu zaten tekildi (bir kategori açılınca diğeri otomatik kapanıyordu) — ek değişiklik gerekmedi.
+- **`vercel.json`** eklendi — SPA route'larının (`/sistem/login` gibi) doğrudan adres çubuğundan/yenilemeden çalışması için Vercel'e "her yolu index.html'e yönlendir" talimatı.
+- **Görsel yolu düzeltmesi** (`supabase_migration_008_fix_image_paths.sql`) — ürün görselleri artık mutlak `lobbygarden.com` adresi yerine göreceli yol kullanıyor, hangi domain'de çalışırsa çalışsın doğru görsele bakıyor.
+
+
 ## Kapsam dışı bırakılanlar / bilinen sınırlamalar
 - **Ürünler artık kategori içinde sürükle-bırak ile sıralanabiliyor** (admin panel, `@dnd-kit`) — sadece sol taraftan belirli bir kategori seçiliyken aktif (arama kutusu da boş olmalı). Kategoriler de aynı şekilde sürüklenerek sıralanıyor.
 - **Menü Ürünleri sayfasında kategori filtresi sol sidebar'da**, gruplu (Mezeler & Aperatifler / Ana Yemekler / İçecekler).
@@ -85,7 +96,6 @@ npm run dev
 - **Ayarlar bölümü:** WiFi şifresi ve rezervasyon telefonu admin panelden giriliyor, public menünün altında görünüyor.
 - **Route değişikliği:** `/admin/dashboard` yerine artık `/sistem`, `/admin/login` yerine `/sistem/login`. Eski linkler otomatik yönleniyor.
 - **TR/EN dil seçeneği:** Sağ üstte sabit köşede. Arayüz metinleri (butonlar, başlıklar) tam çevrildi. **231 ürünün ve 25 kategorinin İngilizce çevirisini ben yaptım** (`supabase_migration_007_translations.sql`) — restoranın kendi terminolojisini/marka diline uymayan bir çeviri görürsen admin panelden ürün bazında düzeltebilirsin (İngilizce alanlar boş bırakılırsa otomatik Türkçe'ye döner, hiçbir zaman boş görünmez).
-- İntro ekranındaki arka plan CSS gradyanı — orijinal `lobbygarden.com` görseli hotlink koruması nedeniyle kullanılamadı.
 - Kategori silme, o kategoride ürün varsa engellenir. Kategori yeniden adlandırıldığında ürünlerin `category` alanı otomatik güncellenir (cascade).
 
 ## Bu turlarda kendi eklediğim şeyler
